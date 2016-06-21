@@ -17,20 +17,23 @@ class ArticlesController < ApplicationController
 
   def create
     @article = Article.create(article_params)
-    @article.save
-
-    redirect_to article_path(@article)
+    if @article.save
+      redirect_to article_path(@article)
+    else
+      render 'new'
+    end
   end
 
   def update
-    @article.update(article_params)
-
-    redirect_to article_path(@article)
+    if @article.update(article_params)
+      redirect_to article_path(@article)
+    else
+      render 'edit'
+    end
   end
 
   def destroy
     @article.destroy
-
     redirect_to articles_path
   end
 

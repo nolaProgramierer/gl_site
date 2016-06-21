@@ -1,4 +1,20 @@
 <%= form_for @article do |f| %>
+
+  <% if @article.nil? %>
+    <div id="error_explanation">
+      <h2>
+      <%= pluralize(@article.errors.count, 'error') %>
+      prevented this page from being saved:
+    </h2>
+    <ul>
+    <% @article.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+      <% end %>
+    </ul>
+    </div>
+  <% end %>
+
+
 <p>
   <%= f.label :title %><br>
   <%= f.text_field :title %>
