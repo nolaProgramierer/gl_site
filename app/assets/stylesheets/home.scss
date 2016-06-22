@@ -7,17 +7,24 @@
 /* universal */
 
 body {
-  padding-top: 60px;
+  font-family: Vollkorn;
+  font-size: 1.75 rem;
 }
+#splash-img {
+  height: 100%;
+  width: 100%;
+}
+
+
 section {
   overflow: auto;
 }
-textarea {
-  resize: vertical;
-}
-.center {
-  text-align: center;
-}
-.center h1 {
-  margin-bottom: 10px;
-}
+// textarea {
+//   resize: vertical;
+// }
+// .center {
+//   text-align: center;
+// }
+// .center h1 {
+//   margin-bottom: 10px;
+// }
