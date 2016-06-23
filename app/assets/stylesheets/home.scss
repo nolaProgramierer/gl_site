@@ -37,7 +37,10 @@ body {
 	opacity; 0;
 }*/
 /* bio section */
-
+a {
+  outline: none !important;
+  border: none !important;
+}
 #page2 {
 	/*background-color: #705e6c;*/
 	background-color: #bd8169;
