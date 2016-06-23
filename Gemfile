@@ -15,6 +15,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
+# Use FontAwesome with Rails
+gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'
 
 
 # Use jquery as the JavaScript library
