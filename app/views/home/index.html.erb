@@ -1,6 +1,161 @@
 <% provide(:title, "Home") %>
-  <h1>Welcome to Glenn's Rails site</h1>
+
+<div class="container-fluid">
+  <div class="row">
+    <%= image_tag('gl_layingBatonWeb', alt: "Glenn Langdon with baton", class: "img-responsive
+     center-block", id: "splash-img") %>
+  </div>
+  <div class="row" id="page2">
+    <div class="col-md-12" id="bio">
+      <h1>About Glenn</h2>
+        <div>
+          <%= image_tag("gl_pub_pic", alt: "Picture of Glenn Langdon", class: "img-responsive
+          img-rounded", id: "bio-pic") %>
+        </div>
+        <p class="lead">Praised for his polished, expressive, and nuanced performances, conductor Glenn Langdon&rsquo;s unusually
+          varied repertoire highlights an eclectic musical aesthetic and singularly American heritage.  From directing performances
+          of the<em> Rite of Spring</em> and <em>Carmina Burana</em>, to the jazz of Kermit Ruffins and the cajun fiddle tunes of
+          Amanda Shaw, Langdon is fully &quot;at home.&quot;  His conducting credits include The Cleveland Orchestra, the BBC Scottish
+          National Orchestra,  the Kennedy Center Opera House Orchestra, and the Louisiana Philharmonic Orchestrain addition to
+          Broadway touring shows, ballet orchestras, and pops concerts. Outside the US, Langdon has conducted the Singapore Orchestra,
+          L'Orchestre National de Lyon, the Orchestra Sinfonica di Sanremo in Italy, and the Stavanger Symphony in Norway.</p>
+        <p class="has-pullquote" data-pullquote="An eclectic musical aesthetic and singularly American heritage"></p>
+        <p> A veteran of touring Broadway shows, Langdon was <span class="bio-text-highlight">Music Director</span> of the
+          touring production of <span class="bio-text-highlight">Andrew Lloyd Weber's the <em>Phantom of the Opera</em>.</span> On
+          tour, Glenn traveled to over 60 cities in the United States and Canada over 14 years, conducting close to 5000 performances
+          of the world's most successful Broadway musical productions.</p>
+        <p>With his wide musical curiosity and a strong interest in story telling, Langdon was inevitably drawn to work in the
+          field of dance as well.  As <span class="bio-text-highlight">Music Director and principal conductor of the Houston
+          Ballet</span> he conducted the breadth of the classical repertory and distinguished himself with performances of the 20th
+          century works by Stravinsky, Orff, and Prokofiev. Collaborating with jazz legend Cleo Laine and her husband John Dankworth,
+          Langdon led the premiere of a dance theater piece, <em>Lady In Waiting</em>, in Houston, Texas and conducted the
+          world premier of the ballet <em>Gautama Buddha</em> by British composer Naresh Sohal at the Edinburgh Festival in Scotland.</p>
+
+          <div class="img hover-img" id="gl-cond-LPO-Nut">
+            <!-- <img src="../../assets/GLconducts_250x313.jpg"> -->
+            <%= image_tag("GLconducts_250x313.jpg", alt: "Glenn Langdon conducting the LPO", class: "center-block img-rounded") %>
+                  <div class="caption-global text-center" id="bio-caption">
+                  <p>Conducting the Louisiana Philharmonic Orchestra</p>
+                  </div>
+          </div>
+              <p>Langdon&rsquo;s interest in bringing music to audiences in non-traditional venues began when he was
+              <span class="bio-text-highlight">Music Director of the Texas Opera Theatre Residency Company,</span> a regional
+              affiliate of the Houston Grand Opera. Touring throughout Texas and the immediate Southwest, Langdon and a small
+              troupe of singers and production personnel performed light opera and musical theatre excerpts in locations as diverse
+              as senior citizen centers, high schools, opera houses and small German-Texas beer halls. Programs with original
+              music, props, costumes and inventive staging were produced in classrooms, introducing hundreds of school children
+              to the arts.</p>
+          <div class="img hover-img" id="cotton-field-img">
+            <%= image_tag("gl_cotton_fields", alt: "Glenn Langdon inspecting cotton fields during harvest.",
+                class: "img-rounded img-responsive") %>
+                  <div class="caption-global caption text-center">
+                    <p> Inspecting the cotton crop with his long-time farmer, Tommy Wilkins.
+                    </p>
+                  </div>
+          </div>
+              <p><span class="bio-text-highlight">Hailing from generations of cotton farmers, </span>Langdon cares deeply about
+              sustainability in agriculture for the future of America's farmlands. And as a musician, he's committed to making
+              the arts accessible to all and the sustainability of the arts for the soul of the country.</p>
+              <p>Langdon graduated from Florida State University and attended the University of Houston, studying piano with
+              James Streem, Carlisle Floyd and Abbey Simon.  His conducting studies included work at the Tanglewood Music Center,
+              L'Accademia Musicale Chigiana in Siena, Italy and the Centre Acanthes in Avignon,
+              France, where Glenn was mentored by Leonard Bernstein, Seiji Ozawa, Gustav Meier, Franco Ferrara, and Pierre Boulez.</p>
+       </div><!--col-md-12-->
+  </div><!--row page2-->
+
+  <div class="row">
+        <section id="recital" data-speed="10" data-type="background">
+            <div class="scroll-quote" id="recital-text0">
+               <blockquote>
+                        “<em>The LPO, under the direction of Glenn Langdon, provided a confident interpretation of the score
+                        throughout the performance.
+                        The orchestra seemed to delight in playing this music and made the familiar tunes come alive</em>.”
+                        <footer><cite title="Source Title">The New Orleans Times-Picayune</cite></footer>
+                    </blockquote>
+            </div>
+            <div class="scroll-quote" id="recital-text1">
+               <blockquote class="blockquote-reverse">
+                        “<em>And conductor Glenn Langdon elicited a notably polished, expressive performance of Bartok’s
+                        dissonant, sensuous musical score to the ballet</em>.”
+                        <footer><cite title="Source Title">The Houston Post</cite></footer>
+                    </blockquote>
+            </div>
+        </section>
+    </div>
+
+    <div class="row" id="media-header">
+    <h1 class="text-center">In Performance</h1>
+    </div>
+
+    <div class="row" id="media-clips">
+        <div class="col-md-6">
+            <div id ="stravinsky-clip">
+                <video class="video-js vjs-default-skin vjs-16-9" controls preload="auto"
+                poster="../..assets/stravinsky_etude_poster.jpg" data-setup='{}'>
+
+                     <source src="videos/stravinsky_etude4.mp4" type='video/mp4'>
+                     <source src="videos/stravinsky_etude4HD.webm" type='video/webm'>
+                        <p class="vjs-no-js">
+                            To view this video please enable JavaScript, and consider upgrading to a web browser
+                            that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                        </p>
+                </video>
+              </div>
+        </div>
+        <div class="col-md-6">
+            <div id="phantom-clip">
+                <video class="video-js vjs-default-skin vjs-16-9" controls preload="auto" data-setup='{}'>
+                    <source src="videos/phantom480x360_edit.mp4" type="video/mp4">
+                    <source src="videos/phantom480x360_edit.webm" type="video/webm">
+                        <p class="vjs-no-js">
+                                To view this video please enable JavaScript, and consider upgrading to a web browser
+                                that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                        </p>
+                </video>
+             </div>
+        </div>
+    </div><!--row-->
+
+
+    <div class="row" id="in-the-news">
+        <div class="col-md-4">
+            <div class="hover-img news-img">
+              <%= image_tag("broadway_web", alt: "Image of Times Square", class: "center-block img-rounded") %>
+                <!-- <img src="images/broadway_web.jpg" class="center-block img-rounded" alt="Image of Times Square."> -->
+                	<div class="caption-global caption text-center" id="batt-broadway">
+                    	<h3>Bryan Batt with the LPO</h3>
+                        <p>Glenn Langdon to conduct the Louisiana Philharmonic Orchestra with the star of <em>Mad Men</em>, Bryan Batt.</p>
+                        <p><a href=" https://www.lpomusic.com/online/article/broadways-best"
+                        class="btn btn-info btn-sm">See concert details</a></p>
+                    </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="hover-img news-img">
+              <%= image_tag("gl_cond_gretna", alt: "Glenn Langdon conducting the LPO", class: "center-block img-rounded") %>
+                <!-- <img src="images/gl_cond_gretna.jpg" class="center-block img-rounded" alt="Glenn Langdon conducting the LPO."> -->
+                    <div class="caption-global caption text-center" id="news-item-gretna-caption">
+                        <h3>Glenn Langdon conducts the LPO</h3>
+                        <p>Glenn Langdon conducting the Louisiana Philharmonic Orchestra in their Holiday Spectacular</p>
+                        <p><a href="http://photos.nola.com/tpphotos/2012/12/angelic_sounds_of_christmaszip_3.html"
+                        class="btn btn-info btn-sm">View article at NOLA.com</a></p>
+                     </div>
+            </div>
+          </div>
+            <div class="col-md-4">
+            	<div class="hover-img news-img">
+                <%= image_tag("gl_cond_stairs", alt: "Glenn Langdon sitting on stairs", class: "center-block img-rounded") %>
+                	<!-- <img src="images/gl_cond_stairs.jpg" class="center-block img-rounded" alt="Glenn Langdon sitting on stairs"> -->
+                    	<div class="caption-global caption text-center" id="news-item-stairs-caption">
+                        	<h3>Glenn Langdon overcomes injury to perform again. again</h3>
+                            <p><a href="http://www.nola.com/nolavie/index.ssf/2011/12/glenn_langdon_pianist_and_lpo.html"
+                            class="btn btn-info btn-sm">View article at NOLA.com</a></p>
+                        </div>
+               </div>
+           </div>
+    	</div><!--row-->
+
   <p>
-    This will be Glenn's single page website: Music, Programming, and Farming. Oh, and a Rails blog!
+    <%= link_to "Glenn's Blog", articles_path %>
   </p>
-  
+</div>

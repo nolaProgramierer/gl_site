@@ -1,3 +1,172 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* universal */
+
+/* universal */
+
+body {
+	font-family: Vollkorn;
+	font-size: 1.75rem;
+}
+#splash-img {
+	height: 100%;
+	width: 100%;
+}
+.caption {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background: rgba(0,0,0,0.4);
+	width: 300px;
+	height: 225px;
+	color:#fff !important;
+	/*another way to center absolutely positioned element */
+	/*left: 50%;
+	margin-left: -150px;*/
+	 /*yet another way to center absolutely positioned element */
+	/*left: 50%;
+	transform: translate(-50%);*/
+}
+/*.hidden-quotes {
+	opacity; 0;
+}*/
+/* bio section */
+
+#page2 {
+	/*background-color: #705e6c;*/
+	background-color: #bd8169;
+	color: white;
+}
+#bio {
+	padding: 30px 60px 20px 60px;
+}
+#bio-pic {
+	float: right;
+	margin: 0px 0px 20px 20px;
+}
+#bio h1 {
+	color: #8a3109;
+	text-align: center;
+	font-size: 4rem;
+}
+.bio-text-highlight {
+	color: #8a3109;
+	font-size: 2rem;
+}
+.has-pullquote:before {
+	content: attr(data-pullquote);
+	float: left;
+	width: 300px;
+	position: relative;
+	top: 5px;
+	font-size: 4rem;
+	line-height: 4.25rem;
+	color: #8a3109;
+	padding-left: 25px;
+	margin-bottom: 20px;
+}
+#cotton-field-img {
+	float: left;
+	margin: 0px 30px 0px 0px;
+}
+#cotton-field-img .caption {
+	padding: 70px 20px 0px 20px;
+}
+#gl-cond-LPO-Nut {
+	float: right;
+	margin: 0px 0px 0px 15px;
+}
+#gl-cond-LPO-Nut #bio-caption {
+	padding: 135px 20px 0px 20px;
+}
+.img {
+	position: relative;
+	overflow: hidden;
+	margin-top: 40px;
+}
+#bio-caption {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background: rgba(0,0,0,0.4);
+	width: 250px;
+	height: 313px;
+	color:#fff !important;
+	/*another way to center absolutely positioned element */
+	/*left: 50%;
+	margin-left: -150px;*/
+	 /*yet another way to center absolutely positioned element */
+	/*left: 50%;
+	transform: translate(-50%);*/
+}
+
+
+/* piano_parallax */
+
+#recital {
+	background: url("gl_recital_web") 50% 0 no-repeat fixed;
+	min-height: 400px;
+	width: 100%;
+}
+#recital-text0 {
+	color: white;
+	padding-top: 50px;
+	font-size: 48px;
+	left: -150px;
+	opacity: 0;
+}
+#recital-text1 {
+	color: white;
+	padding-top: 20px;
+	font-size: 48px;
+	right: -150px;
+	opacity: 0;
+}
+#recital blockquote footer {
+	color: white;
+}
+/*.hidden-quotes {
+	left: -150px;
+	opacity : 0;
+}
+*/
+
+/* media section */
+
+#media-header {
+	background-color: #8a3109;
+	color: white;
+}
+#media-clips {
+	background-color: #8a3109;
+}
+#phantom-clip {
+	margin: 35px 40px 60px 5px
+}
+#stravinsky-clip {
+	margin: 35px 5px 60px 40px
+}
+/*.video-clips {
+	margin: 60px 30px 60px 30px;
+}*/
+
+
+// textarea {
+//   resize: vertical;
+// }
+// .center {
+//   text-align: center;
+// }
+// .center h1 {
+//   margin-bottom: 10px;
+// }
