@@ -32,6 +32,7 @@
           world premier of the ballet <em>Gautama Buddha</em> by British composer Naresh Sohal at the Edinburgh Festival in Scotland.</p>
 
           <div class="img hover-img" id="gl-cond-LPO-Nut">
+            <!-- <img src="../../assets/GLconducts_250x313.jpg"> -->
             <%= image_tag("GLconducts_250x313.jpg", alt: "Glenn Langdon conducting the LPO", class: "center-block img-rounded") %>
                   <div class="caption-global text-center" id="bio-caption">
                   <p>Conducting the Louisiana Philharmonic Orchestra</p>
@@ -53,8 +54,8 @@
                   </div>
           </div>
               <p><span class="bio-text-highlight">Hailing from generations of cotton farmers, </span>Langdon cares deeply about
-              sustainability in agriculture for the future of America's farmlands. And as a musician, he's committed to making the arts accessible to all and the sustainability of the arts for the
-              soul of the country.</p>
+              sustainability in agriculture for the future of America's farmlands. And as a musician, he's committed to making
+              the arts accessible to all and the sustainability of the arts for the soul of the country.</p>
               <p>Langdon graduated from Florida State University and attended the University of Houston, studying piano with
               James Streem, Carlisle Floyd and Abbey Simon.  His conducting studies included work at the Tanglewood Music Center,
               L'Accademia Musicale Chigiana in Siena, Italy and the Centre Acanthes in Avignon,
@@ -81,6 +82,78 @@
             </div>
         </section>
     </div>
+
+    <div class="row" id="media-header">
+    <h1 class="text-center">In Performance</h1>
+    </div>
+
+    <div class="row" id="media-clips">
+        <div class="col-md-6">
+            <div id ="stravinsky-clip">
+                <video class="video-js vjs-default-skin vjs-16-9" controls preload="auto"
+                poster="../..assets/stravinsky_etude_poster.jpg" data-setup='{}'>
+
+                     <source src="videos/stravinsky_etude4.mp4" type='video/mp4'>
+                     <source src="videos/stravinsky_etude4HD.webm" type='video/webm'>
+                        <p class="vjs-no-js">
+                            To view this video please enable JavaScript, and consider upgrading to a web browser
+                            that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                        </p>
+                </video>
+              </div>
+        </div>
+        <div class="col-md-6">
+            <div id="phantom-clip">
+                <video class="video-js vjs-default-skin vjs-16-9" controls preload="auto" data-setup='{}'>
+                    <source src="videos/phantom480x360_edit.mp4" type="video/mp4">
+                    <source src="videos/phantom480x360_edit.webm" type="video/webm">
+                        <p class="vjs-no-js">
+                                To view this video please enable JavaScript, and consider upgrading to a web browser
+                                that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                        </p>
+                </video>
+             </div>
+        </div>
+    </div><!--row-->
+
+
+    <div class="row" id="in-the-news">
+        <div class="col-md-4">
+            <div class="hover-img news-img">
+              <%= image_tag("broadway_web", alt: "Image of Times Square", class: "center-block img-rounded") %>
+                <!-- <img src="images/broadway_web.jpg" class="center-block img-rounded" alt="Image of Times Square."> -->
+                	<div class="caption-global caption text-center" id="batt-broadway">
+                    	<h3>Bryan Batt with the LPO</h3>
+                        <p>Glenn Langdon to conduct the Louisiana Philharmonic Orchestra with the star of <em>Mad Men</em>, Bryan Batt.</p>
+                        <p><a href=" https://www.lpomusic.com/online/article/broadways-best"
+                        class="btn btn-info btn-sm">See concert details</a></p>
+                    </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="hover-img news-img">
+              <%= image_tag("gl_cond_gretna", alt: "Glenn Langdon conducting the LPO", class: "center-block img-rounded") %>
+                <!-- <img src="images/gl_cond_gretna.jpg" class="center-block img-rounded" alt="Glenn Langdon conducting the LPO."> -->
+                    <div class="caption-global caption text-center" id="news-item-gretna-caption">
+                        <h3>Glenn Langdon conducts the LPO</h3>
+                        <p>Glenn Langdon conducting the Louisiana Philharmonic Orchestra in their Holiday Spectacular</p>
+                        <p><a href="http://photos.nola.com/tpphotos/2012/12/angelic_sounds_of_christmaszip_3.html"
+                        class="btn btn-info btn-sm">View article at NOLA.com</a></p>
+                     </div>
+            </div>
+          </div>
+            <div class="col-md-4">
+            	<div class="hover-img news-img">
+                <%= image_tag("gl_cond_stairs", alt: "Glenn Langdon sitting on stairs", class: "center-block img-rounded") %>
+                	<!-- <img src="images/gl_cond_stairs.jpg" class="center-block img-rounded" alt="Glenn Langdon sitting on stairs"> -->
+                    	<div class="caption-global caption text-center" id="news-item-stairs-caption">
+                        	<h3>Glenn Langdon overcomes injury to perform again. again</h3>
+                            <p><a href="http://www.nola.com/nolavie/index.ssf/2011/12/glenn_langdon_pianist_and_lpo.html"
+                            class="btn btn-info btn-sm">View article at NOLA.com</a></p>
+                        </div>
+               </div>
+           </div>
+    	</div><!--row-->
 
   <p>
     <%= link_to "Glenn's Blog", articles_path %>
