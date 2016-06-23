@@ -14,3 +14,43 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function(){
+
+	// parallax function
+  $window = $(window);
+  $('section[data-type="background"]').each(function(){
+     var $scroll = $(this);
+      $(window).scroll(function() {
+        var yPos = -($window.scrollTop() / $scroll.data('speed'));
+        var coords = '50% '+ yPos + 'px';
+        $scroll.css({ backgroundPosition: coords });
+      }); // end  scroll
+   });  // end section
+
+   // hover effect for images
+   $('.hover-img').hover(
+		function(){
+			$(this).find('.caption-global').slideDown(333);
+		},
+		function(){
+			$(this).find('.caption-global').fadeOut(500);
+		}
+	);	// end hover
+
+	 $(window).scroll(function() {
+		 $('.scroll-quote').each(function(index, value) {
+			 var quote_bottom = $(this).offset().top + $(this).outerHeight();
+			 var win_bottom = $(window).scrollTop() + $(window).height();
+			 if (win_bottom > quote_bottom) {
+				 if (($(this).is("#recital-text0")) || ($(this).is("#chandelier-text1"))) {
+					 $(this).animate({'opacity' : '1', 'padding-left' : '150'}, 1250);
+				 }
+				 else {
+					$(this).animate({'opacity' : '1', 'padding-right' : '200'}, 1250);
+				 }
+			 }
+	 	}); // end each
+	 }); //end scroll
+
+}); // end ready 
