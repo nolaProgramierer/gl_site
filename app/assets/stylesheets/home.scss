@@ -110,6 +110,36 @@ body {
 	transform: translate(-50%);*/
 }
 
+
+/* piano_parallax */
+
+#recital {
+	background: url("gl_recital_web") 50% 0 no-repeat fixed;
+	min-height: 400px;
+	width: 100%;
+}
+#recital-text0 {
+	color: white;
+	padding-top: 50px;
+	font-size: 48px;
+	left: -150px;
+	opacity: 0;
+}
+#recital-text1 {
+	color: white;
+	padding-top: 20px;
+	font-size: 48px;
+	right: -150px;
+	opacity: 0;
+}
+#recital blockquote footer {
+	color: white;
+}
+/*.hidden-quotes {
+	left: -150px;
+	opacity : 0;
+}
+*/
 // textarea {
 //   resize: vertical;
 // }
