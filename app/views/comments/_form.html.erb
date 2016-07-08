@@ -1,4 +1,5 @@
 <div class="row">
+  <div class="col-md-8 col-md-offset-2">
   <h2>Leave a reply</h2>
     <%= form_for([@article, @article.comments.build]) do |f| %>
       <div id="commenter-form">
@@ -14,4 +15,5 @@
       <%= f.submit "Submit comment" %>
     </p>
     <% end %>
+  </div>
 </div>
