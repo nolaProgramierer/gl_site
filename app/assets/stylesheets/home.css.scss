@@ -251,6 +251,28 @@ a {
 	padding-top: 50px;
 }
 
+// blog
+.article-title {
+	text-align: center;
+	margin-top: 50px;
+}
+.comment-list {
+	background-color: #f0f0f0;
+	box-shadow: 3px 3px 3px lightgray;
+}
+#comment-body {
+	height: 150px;
+	width: 500px;
+	border: 3px solid #cccccc;
+}
+.commenter-list {
+	color: gray;
+}
+#commenter-form {
+	margin-bottom: 10px;
+}
+
+
 
 // textarea {
 //   resize: vertical;

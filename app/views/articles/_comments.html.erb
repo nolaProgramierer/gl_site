@@ -1,0 +1,18 @@
+<h2>Comments</h2>
+<% @article.comments.each do |comment| %>
+  <div class="row">
+    <div class="col-md-12 commenter-list">
+        <!-- <strong>Commenter:</strong> -->
+        <%= comment.commenter %>
+    </div>
+    <div class="col-md-5 comment-list">
+      <!-- <strong>Comment:</strong> -->
+      <%= comment.body %>
+    </div>
+    <div class="col-md-12 small" id="comment-submit">
+      <%= link_to 'Delete Comment', [comment.article, comment],
+          method: :delete,
+          data: { confirm: 'Are you sure?' } %>
+    </div>
+  </div> <!--row-->
+<% end %>

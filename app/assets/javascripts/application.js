@@ -53,4 +53,19 @@ $(document).ready(function(){
 	 	}); // end each
 	 }); //end scroll
 
-}); // end ready 
+   // enlarge text on hover for parallax elements
+	 $('blockquote').hover(function() {
+		 $(this).stop().animate({
+			 fontSize: '2.75rem'
+		 }, 500)
+	 },
+	 function() {
+		 $(this).stop().animate({
+			 fontSize: '1.75rem'
+		 }, 500)
+	 }
+	);//end hover
+
+
+
+}); // end ready
