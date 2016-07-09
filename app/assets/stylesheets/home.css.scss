@@ -34,6 +34,11 @@ body {
 	/*left: 50%;
 	transform: translate(-50%);*/
 }
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 /*.hidden-quotes {
 	opacity; 0;
 }*/
@@ -154,14 +159,16 @@ a {
 	background-color: #8a3109;
 }
 #phantom-clip {
-	margin: 35px 40px 60px 5px
+	// margin: 35px 0px 60px 0px
+	padding: 0px 150px 100px 150px;
 }
 #stravinsky-clip {
-	margin: 35px 5px 60px 40px
+	// margin: 35px 0px 60px 0px
+	padding: 0px 150px 100px 150px;
 }
-/*.video-clips {
-	margin: 60px 30px 60px 30px;
-}*/
+.video-clips {
+	margin: 35px px 60px 0px;
+}
 
 /* news section */
 #news-header {

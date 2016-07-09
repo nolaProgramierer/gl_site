@@ -89,13 +89,18 @@
     </div>
 
     <div class="row" id="media-clips">
-        <div class="col-md-6">
-            <div id ="stravinsky-clip">
+        <div class="col-md-6" id="stravinsky-clip">
+            <div class="embed-responsive embed-responsive-16by9">
 
-              <%= videojs_rails sources: { mp4: "videos/stravinsky_etude4.mp4", webm: "videos/stravinsky_etude4HD.webm" },
-              width:"400" do %>
-              Please enable <b>JavaScript</b> to see this content.
-              <%- end %>
+              <%= video_tag(["stravinsky_etude4.mp4", "stravinsky_etude4HD.webm"], controls: true,
+              autobuffer: true, poster: "stravinsky_etude_poster", class: "embed-responsive-item center-block" )%>
+
+
+                <%# videojs_rails sources: { mp4: "videos/stravinsky_etude4.mp4", webm: "videos/stravinsky_etude4HD.webm"} %>
+
+                <%# videojs_rails sources: { mp4: "http://domain.com/path/to/video.mp4", webm: "http://another.com/path/to/video.webm"},
+                setup: "{}" %>
+
                 <!-- <video class="video-js vjs-default-skin vjs-16-9" controls preload="auto"
                 poster="../..assets/stravinsky_etude_poster.jpg" data-setup='{}'>
 
@@ -108,12 +113,15 @@
                 </video> -->
               </div>
         </div>
-        <div class="col-md-6">
-            <div id="phantom-clip">
-              <%= videojs_rails sources: { mp4: "videos/phantom480x360_edit.mp4", webm: "videos/phantom480x360_edit.webm" },
-              width:"400" do %>
-              Please enable <b>JavaScript</b> to see this content.
-              <%- end %>
+        <div class="col-md-6" id="phantom-clip">
+            <div class="embed-responsive embed-responsive-16by9">
+
+              <%= video_tag(["phantom480x360_edit.mp4", "phantom480x360_edit.webm"], controls: true,
+              autobuffer: true, class: "center-block embed-responsive-item") %>
+
+
+              <%# videojs_rails sources: { mp4: "videos/phantom480x360_edit.mp4", webm: "videos/phantom480x360_edit.webm" } %>
+
                 <!-- <video class="video-js vjs-default-skin vjs-16-9" controls preload="auto" data-setup='{}'>
                     <source src="videos/phantom480x360_edit.mp4" type="video/mp4">
                     <source src="videos/phantom480x360_edit.webm" type="video/webm">
