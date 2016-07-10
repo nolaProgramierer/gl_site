@@ -66,6 +66,11 @@ body {
   opacity: 0.9;
   font-size: 2rem;
 }
+.comment-section {
+  background-color: white;
+  opacity: 0.9;
+  margin-top: 30px;
+}
 .comment-list {
 	background-color: #f0f0f0;
 	box-shadow: 3px 3px 3px #8a3109;
@@ -82,5 +87,5 @@ body {
 	margin-bottom: 10px;
 }
 #comment-delete {
-  color: white;
+  color: red;
 }

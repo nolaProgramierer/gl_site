@@ -1,0 +1,17 @@
+<div class="comment-section">
+  <h2>Leave a reply</h2>
+  <%= form_for([@article, @article.comments.build]) do |f| %>
+    <div id="commenter-form">
+      <%= f.text_field :commenter %>
+      <%= f.label :commenter %>
+      (required)
+    </div>
+    <div>
+      <%= f.text_area :body, id: "comment-body" %>
+      <%# f.label :body %>
+    </div>
+  <p>
+    <%= f.submit "Submit comment" %>
+  </p>
+  <% end %>
+</div>

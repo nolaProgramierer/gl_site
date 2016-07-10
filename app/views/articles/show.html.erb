@@ -1,65 +1,27 @@
 <% provide(:title, 'Blog') %>
 
   <div class= "row">
-    <div class="col-md-6 col-md-offset-2  article-body">
-      <%= @article.text %>
-      <%= @article.text %>
-    </div>
-    <div class="col-md-2" id="article-listing">
-      <h3>Article Listing</h3>
-      <table>
-        <tbody>
-        <% @articles.each do |article| %>
-          <td><%=link_to article.title, article_path(article)%></td>
-      </tbody>
-      <% end %>
-    </table>
-  </div>
-
-  <div class="col-md-4 col-md-offset-2">
-    <% @article.comments.each do |comment| %>
-          <div class="commenter-list">
-              <%= comment.commenter %>
-          </div>
-          <div class="comment-list">
-            <%= comment.body %>
-          </div>
-          <%= link_to 'Delete Comment', [comment.article, comment],
-              method: :delete,
-              data: { confirm: 'Are you sure?' },
-              class: "small", id: "comment-delete" %>
-      <% end %>
-
-      <h2>Leave a reply</h2>
-      <%= form_for([@article, @article.comments.build]) do |f| %>
-        <div id="commenter-form">
-          <%= f.text_field :commenter %>
-          <%= f.label :commenter %>
-          (required)
+      <div class="col-md-6 col-md-offset-2">
+        <div class="article-body">
+          <%= @article.text %>
+          <%= @article.text %>
         </div>
-        <div>
-          <%= f.text_area :body, id: "comment-body" %>
-          <%# f.label :body %>
-        </div>
-      <p>
-        <%= f.submit "Submit comment" %>
-      </p>
-      <% end %>
+        <%= render 'comments' %>
+
+        <%= render 'comments/form' %>
+      </div>
+
+      <div class="col-md-2" id="article-listing">
+        <h3>Article Listing</h3>
+        <table>
+          <tbody>
+          <% @articles.each do |article| %>
+            <td><%=link_to article.title, article_path(article)%></td>
+        </tbody>
+        <% end %>
+      </table>
     </div>
   </div>
-
-  <!-- <div class="row">
-    <div class="col-md-4 col-md-offset-2">
-
-
-    </div>
-  </div> -->
-
-
-
-  <%# render 'comments' %>
-
-  <%# render 'comments/form' %>
 
 <%= link_to 'Edit', edit_article_path(@article) %> |
 <%= link_to 'Blog listing', articles_path %>
