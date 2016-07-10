@@ -28,10 +28,17 @@
 //   margin-bottom: 10px;
 // }
 
+// universal
+body {
+  background-color: #d8bdaa;
+  font-family: Vollkorn;
+	font-size: 1.75rem;
+}
+
 // blog
 .article-page {
 	// background-color: #bd8169;
-  background-color: #d8bdaa;
+  margin-top: 100px;
 }
 .article-title {
 	text-align: center;
@@ -42,6 +49,7 @@
 .article-body {
   background-color: white;
   opacity: 0.9;
+  font-size: 2rem;
 }
 .comment-list {
 	background-color: #f0f0f0;
