@@ -6,6 +6,8 @@ class ArticlesController < ApplicationController
     end
 
     def show
+      # to show all post titles on show page
+      @articles = Article.all
     end
 
     def new
