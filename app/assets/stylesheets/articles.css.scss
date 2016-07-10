@@ -40,14 +40,21 @@ body {
 // 	// background-color: #bd8169;
 //   margin-top: 50px;
 // }
-#article {
-  margin-top: 50px;
+
+.navbar {
+  height: 60px;
+}
+.navbar-brand {
+  padding-top: 20px;
+  font-size: 4rem;
 }
 .article-title {
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 90px;
   background-color: white;
   opacity: 0.9;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 .article-body {
   background-color: white;
