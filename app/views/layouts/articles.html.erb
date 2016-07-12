@@ -11,20 +11,24 @@
     <![endif]-->
 </head>
 <body>
+  <header>
 
-  <header class="navbar navbar-fixed-top navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-brand">
-        Glenn's Blog
+      <div class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container-fluid">
+          <div id="header-logo">
+            Glenn's Music Blog
+          </div>
+          <div class="navbar-brand">
+          <%= Time.now.strftime("%B %d, %Y") %>
+          </div>
+          <nav>
+            <ul class="nav navbar-nav navbar-right">
+              <li><%= link_to "Back to Site", root_path %></li>
+            </ul>
+          </nav>
+        </div>
       </div>
-      <nav>
-        <ul class="nav navbar-nav navbar-right">
-          <li><%= link_to "Back to Site", root_path %></li>
-        </ul>
-      </nav>
-    </div>
   </header>
-
   <div class="container-fluid article-page">
     <%= yield %>
   </div>

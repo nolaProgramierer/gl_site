@@ -35,20 +35,11 @@ body {
 	font-size: 1.75rem;
 }
 
-// blog
-// .article-page {
-// 	// background-color: #bd8169;
-//   margin-top: 50px;
-// }
-
-.navbar {
-  height: 60px;
-}
-.navbar-brand {
-  padding-top: 20px;
+#header-logo {
+  color: white;
   font-size: 4rem;
+  border-bottom: 2px solid gray;
 }
-
 #article-listing {
   background-color: white;
   margin-left: 20px;
