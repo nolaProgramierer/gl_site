@@ -29,6 +29,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 # Make my jQuery work with turbolinks
 gem 'jquery-turbolinks', '~> 2.1'
+# For nested comment replies
+gem 'ancestry', '~> 2.1'
 
 # # VideoJS gem
 # gem 'videojs_rails', '~> 4.12', '>= 4.12.15'
