@@ -34,7 +34,9 @@ body {
   font-family: Vollkorn;
 	font-size: 1.75rem;
 }
-
+#blog-container {
+  margin-top: 175px;
+}
 #header-logo {
   color: white;
   font-size: 4rem;
@@ -46,7 +48,6 @@ body {
 }
 .article-title {
 	text-align: center;
-	margin-top: 90px;
   background-color: white;
   opacity: 0.9;
   padding-top: 40px;
@@ -56,6 +57,7 @@ body {
   background-color: white;
   opacity: 0.9;
   font-size: 2rem;
+  padding: 0px 25px 0px 25px;
 }
 .comment-section {
   background-color: white;

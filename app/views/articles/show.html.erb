@@ -1,9 +1,11 @@
 <% provide(:title, 'Blog') %>
 
-  <div class= "row">
+  <div class= "row" id="blog-container">
       <div class="col-md-6 col-md-offset-2">
         <div class="article-body">
-          <%= @article.text %>
+          <div class="article-title">
+          <%= @article.title %>
+          </div>
           <%= @article.text %>
         </div>
         <%= render 'comments' %>
