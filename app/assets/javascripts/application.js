@@ -70,6 +70,5 @@ $(document).ready(function(){
 	 }
 	);//end hover
 
-
-
+  
 }); // end ready

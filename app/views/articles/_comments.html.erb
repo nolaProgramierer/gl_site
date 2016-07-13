@@ -1,5 +1,8 @@
 <div class="comment-section">
   <h2>Comments</h2>
+  <!-- counter for comment_list_bckgrd method -->
+  <% count = 1 %>
+
   <% @article.comments.each do |comment| %>
         <div class="commenter-list">
           <div>
@@ -9,14 +12,16 @@
           <div class="small">
             <%= comment.created_at.strftime("%b %-d, %Y at %l:%M %p") %>
           </div>
-
         </div>
-        <div class="comment-list">
+        <!-- see articles_helper -->
+        <div class= <%= comment_list_bckgrd(count) %>>
           <%= comment.body %>
         </div>
         <%= link_to 'Delete Comment', [comment.article, comment],
             method: :delete,
             data: { confirm: 'Are you sure?' },
             class: "small", id: "comment-delete" %>
+  <!-- for comment_list_bckgrd method -->
+        <% count += 1 %>
     <% end %>
   </div>
