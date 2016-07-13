@@ -2,7 +2,14 @@
   <h2>Comments</h2>
   <% @article.comments.each do |comment| %>
         <div class="commenter-list">
+          <div>
             <%= comment.commenter %>
+            says<br>
+          </div>
+          <div class="small">
+            <%= comment.created_at.strftime("%b %-d, %Y at %l:%M %p") %>
+          </div>
+
         </div>
         <div class="comment-list">
           <%= comment.body %>
