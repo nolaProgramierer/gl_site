@@ -57,12 +57,13 @@ body {
   background-color: white;
   opacity: 0.9;
   font-size: 2rem;
-  padding: 0px 25px 0px 25px;
+  padding: 0px 25px 25px 25px;
 }
 .comment-section {
   background-color: white;
   opacity: 0.9;
   margin-top: 30px;
+  padding: 10px 20px 30px 20px;
 }
 .comment-list-wht {
 	background-color: white;
@@ -77,6 +78,9 @@ body {
 	width: 500px;
 	border: 3px solid #cccccc;
 }
+.commenter-name {
+  color: #8a3109;
+}
 .commenter-list {
 	color: #8a3109;
 }
@@ -84,5 +88,9 @@ body {
 	margin-bottom: 10px;
 }
 #comment-delete {
-  color: red;
+  color: gray;
+}
+#comment-submit {
+  background-color: black;
+  color: white;
 }
