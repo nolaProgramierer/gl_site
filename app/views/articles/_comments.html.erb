@@ -16,10 +16,12 @@
         <div class= <%= comment_list_bckgrd(count) %>>
           <%= comment.body %>
         </div>
-        <%= link_to 'Admin', [comment.article, comment],
+        <%= link_to 'Reply', [comment.article(parent_id: :comment), comment], class: "small" %> |
+        <%= link_to 'Delete', [comment.article, comment],
             method: :delete,
             data: { confirm: 'Are you sure?' },
             class: "small", id: "comment-delete" %>
+
   <!-- for comment_list_bckgrd method -->
         <% count += 1 %>
     <% end %>

@@ -1,3 +1,4 @@
+
 <div class="comment-section">
   <h2>Leave a reply</h2>
   <%= form_for([@article, @article.comments.build]) do |f| %>
@@ -12,7 +13,7 @@
       <%= f.hidden_field :parent_id %>
     </div>
     <div>
-      <%= f.submit "Submit comment", class: "btn btn" %>
+      <%= f.submit "Submit reply", class: "btn btn" %>
     </div>
   <% end %>
 </div>
