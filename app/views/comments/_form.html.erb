@@ -7,9 +7,12 @@
       (required)
     </div>
     <div>
+
+
+
       <%= f.text_area :body, id: "comment-body" %>
       <%# f.label :body %>
-      <%= f.hidden_field :parent_id, @article.comments.parent_id %>
+      <%= f.hidden_field :parent_id, @article.comments.parent.id %>
     </div>
     <div>
       <%= f.submit "Submit comment", id: "comment-submit" %>

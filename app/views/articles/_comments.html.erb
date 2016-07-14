@@ -15,7 +15,7 @@
         <!-- see articles_helper -->
         <div class= <%= comment_list_bckgrd(count) %>>
           <%= comment.body %>
-          <%= comment.replies if comment.replies.any? %>
+          <%= render comment.replies if comment.replies.any? %>
         </div>
         <%= link_to 'Admin', [comment.article, comment],
             method: :delete,
@@ -25,3 +25,5 @@
         <% count += 1 %>
     <% end %>
   </div>
+
+  
