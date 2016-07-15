@@ -56,7 +56,7 @@ a {
 }
 #bio {
 	padding: 30px 60px 40px 60px;
-}	
+}
 #bio-pic {
 	float: right;
 	margin: 0px 0px 20px 20px;
@@ -125,7 +125,8 @@ a {
 /* piano_parallax */
 
 #recital {
-	background: url("gl_recital_web") 50% 0 no-repeat fixed;
+	// background: url("gl_recital_web.jpg") 50% 0 no-repeat fixed;
+	background-image: image-url("gl_recital_web.jpg") 50% 0 no-repeat fixed;
 	min-height: 400px;
 	width: 100%;
 }
@@ -204,7 +205,8 @@ a {
 
 /* chandelier parallax */
 #chandelier {
-	background: url("phantom_chandelier_web.jpg") 50% 0 no-repeat fixed;
+	// background: url("phantom_chandelier_web.jpg") 50% 0 no-repeat fixed;
+	background-image: image-url("phantom_chandelier_web.jpg") 50% 0 no-repeat fixed;
 	min-height: 400px;
 	width: 100%;
 }
