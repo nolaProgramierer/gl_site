@@ -126,7 +126,7 @@ a {
 
 #recital {
 	// background: url("gl_recital_web.jpg") 50% 0 no-repeat fixed;
-	background-image: url(image-path("gl_recital_web.jpg")) 50% 0 no-repeat fixed;
+	background: url(image-path("assets/gl_recital_web.jpg")) 50% 0 no-repeat fixed;
 	min-height: 400px;
 	width: 100%;
 }
@@ -206,7 +206,7 @@ a {
 /* chandelier parallax */
 #chandelier {
 	// background: url("phantom_chandelier_web.jpg") 50% 0 no-repeat fixed;
-	background-image: url(image-path("phantom_chandelier_web.jpg")) 50% 0 no-repeat fixed;
+	background: url(image-path("phantom_chandelier_web.jpg")) 50% 0 no-repeat fixed;
 	min-height: 400px;
 	width: 100%;
 }
