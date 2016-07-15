@@ -8,4 +8,10 @@ module ArticlesHelper
     end
     bckgrd_color
   end
+
+  def show_no_comment
+    if (@article.comments.any?)
+      render 'comments'
+    end
+  end
 end
