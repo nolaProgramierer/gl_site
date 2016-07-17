@@ -1,0 +1,1 @@
+{"klass":"Taps::Pull","database_url":"postgres://glennlangdon@localhost/gl_site_development","remote_url":"http://ghl:llfbfh@localhost:5000","session_uri":"/sessions/5708107285","stream_state":{},"completed_tables":[],"table_filter":null,"remote_tables_info":{"schema_migrations":200,"articles":200,"comments":200}}

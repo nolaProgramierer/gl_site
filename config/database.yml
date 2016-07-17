@@ -48,7 +48,7 @@ production:
   # timeout: 5000
 
   adapter: postgresql
-  database: gl_site_test
+  database: gl_site_production
   pool: 5
   timeout: 5000
   username: glennlangdon
