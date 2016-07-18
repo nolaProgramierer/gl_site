@@ -31,7 +31,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Make my jQuery work with turbolinks
 gem 'jquery-turbolinks', '~> 2.1'
 
-gem 'tilt', '~> 1.4', '>= 1.4.1'
+
 # # VideoJS gem
 # gem 'videojs_rails', '~> 4.12', '>= 4.12.15'
 
@@ -44,6 +44,11 @@ gem 'tilt', '~> 1.4', '>= 1.4.1'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# For taps server
+
+gem 'tilt', '~> 1.4.1'
+
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
@@ -52,7 +57,8 @@ group :development, :test do
 end
 
 group :development do
-  gem 'sqlite3', '~> 1.3', '>= 1.3.11'
+  # gem 'sqlite3', '~> 1.3', '>= 1.3.11'
+  gem 'pg', '~> 0.18.4'
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 
