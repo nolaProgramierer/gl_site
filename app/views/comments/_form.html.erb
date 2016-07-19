@@ -1,6 +1,7 @@
 <div class="comment-section">
   <h2>Leave a reply</h2>
   <p class="small">Your email address will not be published. Required field are marked *</p>
+
   <%= form_for([@article, @article.comments.build]) do |f| %>
     <div>
       <%= f.email_field :email, class: "commenter-form" %>
