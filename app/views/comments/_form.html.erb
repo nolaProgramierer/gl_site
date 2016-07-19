@@ -1,17 +1,27 @@
 <div class="comment-section">
   <h2>Leave a reply</h2>
+  <p class="small">Your email address will not be published. Required field are marked *</p>
   <%= form_for([@article, @article.comments.build]) do |f| %>
-    <div id="commenter-form">
-      <%= f.text_field :commenter %>
-      <%= f.label :commenter %>
-      (required)
+    <div>
+      <%= f.email_field :email, class: "commenter-form" %>
+      <%= f.label :email %>
+      *
+    </div>
+    <div>
+      <%= f.text_field :commenter, class: "commenter-form" %>
+      <%= f.label :name %>
+      *
+    </div>
+    <div>
+      <%= f.url_field :website, class: "commenter-form" %>
+      <%= f.label :website %>
     </div>
     <div>
       <%= f.text_area :body, id: "comment-body" %>
       <%# f.label :body %>
     </div>
     <div>
-      <%= f.submit "Submit comment", class: "btn btn" %>
+      <%= f.submit "Submit comment", class: "btn" %>
     </div>
   <% end %>
 </div>
