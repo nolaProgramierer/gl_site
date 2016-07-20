@@ -4,14 +4,12 @@
       <div class="col-md-6 col-md-offset-2">
         <div class="article-body">
           <div class="article-title">
-          <h2><%= @article.title %></h2>
+            <h2><%= @article.title %></h2>
           </div>
-          <%= @article.text %>
+          <div>
+            <%= @article.text %>
+          </div>
         </div>
-        <%# render 'comments' %>
-        <!-- show comment listing only if comments exit -->
-        <%= show_no_comment %>
-        <!-- <%# render 'comments/form' %> -->
       </div>
 
       <div class="col-md-2" id="article-listing">
