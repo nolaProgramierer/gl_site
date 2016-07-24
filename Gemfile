@@ -31,6 +31,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 # Make my jQuery work with turbolinks
 gem 'jquery-turbolinks', '~> 2.1'
+# WYSIWYG editor for blog
+gem 'ckeditor', '~> 4.2'
 
 
 # # VideoJS gem
