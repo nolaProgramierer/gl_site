@@ -33,6 +33,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'jquery-turbolinks', '~> 2.1'
 # WYSIWYG editor for blog
 gem 'ckeditor', '~> 4.2'
+# image uploader
+gem 'paperclip', '~> 5.0'
 
 
 # # VideoJS gem
