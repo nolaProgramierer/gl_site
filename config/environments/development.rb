@@ -39,13 +39,5 @@ Rails.application.configure do
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 
-  config.paperclip_defaults = {
-  storage: :s3,
-  s3_credentials: {
-    bucket: ENV.fetch('glmusicsite'),
-    access_key_id: ENV.fetch('AKIAICGN7FYKWYWQBC5A'),
-    secret_access_key: ENV.fetch('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'),
-    s3_region: ENV.fetch('us-west-1'),
-  }
-}
+  
 end
