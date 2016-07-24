@@ -12,3 +12,5 @@ Rails.application.config.assets.version = '1.0'
 
 # Added articles.css to precompile pipeline
 Rails.application.config.assets.precompile += %w( articles.css )
+
+Rails.application.config.assets.precompile += %w( ckeditor/* )
