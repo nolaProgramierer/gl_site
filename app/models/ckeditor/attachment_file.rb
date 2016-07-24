@@ -14,8 +14,8 @@ class Ckeditor::AttachmentFile < Ckeditor::Asset
 
 # for heroku remote
 has_attached_file :data,
-                    url: '/ckeditor_assets/attachments/:id/:filename',
-                    path: '/ckeditor_assets/attachments/:id/:filename',
+                    # url: '/ckeditor_assets/attachments/:id/:filename',
+                    # path: '/ckeditor_assets/attachments/:id/:filename',
                       :styles => { :content => '800>', :thumb => '118x100#' },
                     :storage => :s3,
                     :s3_credentials => "#{Rails.root}/config/aws.yml",
