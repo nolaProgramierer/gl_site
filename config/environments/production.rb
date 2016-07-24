@@ -76,4 +76,14 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  config.paperclip_defaults = {
+  storage: :s3,
+  s3_credentials: {
+    bucket: ENV.fetch('gl-music-site'),
+    access_key_id: ENV.fetch('AKIAI2W7YJVYPC5V63FA'),
+    secret_access_key: ENV.fetch('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'),
+    s3_region: ENV.fetch('Northern California'),
+  }
+}
 end
