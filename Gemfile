@@ -36,7 +36,7 @@ gem 'ckeditor', '~> 4.2'
 # image uploader
 gem 'paperclip', '~> 5.0'
 # Amazon web service for image uploads
-gem 'aws-sdk', '~> 2'
+# gem 'aws-sdk', '~> 2'
 
 
 # # VideoJS gem
