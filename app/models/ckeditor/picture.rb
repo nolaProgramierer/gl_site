@@ -13,7 +13,7 @@ class Ckeditor::Picture < Ckeditor::Asset
 #   end
 # end
 
-for heroku remote
+#for heroku remote
 has_attached_file :data,
             url: '/ckeditor_assets/pictures/:id/:style_:basename.:extension',
             path: ':rails_root/public/ckeditor_assets/pictures/:id/:style_:basename.:extension',
