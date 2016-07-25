@@ -80,7 +80,7 @@ Rails.application.configure do
   config.paperclip_defaults = {
     storage: :s3,
     s3_credentials: {
-      bucket: ENV.fetch('glmusicsite'),
+      # bucket: ENV.fetch('glmusicsite'),
       access_key_id: ENV.fetch('AKIAIDDZQVDA6MWPGMVA'),
       secret_access_key: ENV.fetch('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'),
       s3_region: ENV.fetch('us-west-1'),
