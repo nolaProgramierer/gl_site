@@ -1,4 +1,4 @@
-# class Ckeditor::AttachmentFile < Ckeditor::Asset
+class Ckeditor::AttachmentFile < Ckeditor::Asset
 #   has_attached_file :data,
 #                     url: '/ckeditor_assets/attachments/:id/:filename',
 #                     path: ':rails_root/public/ckeditor_assets/attachments/:id/:filename'
@@ -11,14 +11,15 @@
 #     @url_thumb ||= Ckeditor::Utils.filethumb(filename)
 #   end
 # end
-#
+
 # for heroku remote
   has_attached_file :data,
                     url: '/ckeditor_assets/attachments/:id/:filename',
                     path: ':rails_root/public/ckeditor_assets/attachments/:id/:filename',
                     styles: { :content => '800>', :thumb => '118x100#' },
                       storage: :s3,
-                      :s3_credentials => "#{Rails.root}/config/aws.yml"
+                      bucket: 'glmusicsite',
+                      s3_credentials:  '#{Rails.root}/config/aws.yml'
 
 
   validates_attachment_presence :data
