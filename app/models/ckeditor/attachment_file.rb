@@ -14,7 +14,8 @@ class Ckeditor::AttachmentFile < Ckeditor::Asset
 
 # for heroku remote
   has_attached_file :data,
-                    url: '/ckeditor_assets/attachments/:id/:filename',
+                    # url: '/ckeditor_assets/attachments/:id/:filename',
+                    url: 'glmusicsite.s3.amazonaws.com',
                     # path: ':rails_root/public/ckeditor_assets/attachments/:id/:filename',
                     path: '/ckeditor_assets/attachments/:id/:filename',
 
