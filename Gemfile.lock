@@ -200,6 +200,7 @@ DEPENDENCIES
   jquery-rails
   jquery-turbolinks (~> 2.1)
   minitest-reporters (~> 1.1, >= 1.1.9)
+  nokogiri (~> 1.6, >= 1.6.8)
   paperclip (~> 5.0)
   pg (~> 0.18.4)
   rails (= 4.2.5)
