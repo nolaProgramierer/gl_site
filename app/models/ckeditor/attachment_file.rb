@@ -15,7 +15,8 @@ has_attached_file :data,
                   url: '/ckeditor_assets/attachments/:id/:filename',
                   path: ':rails_root/public/ckeditor_assets/attachments/:id/:filename',
                   :storage => :s3,
-                  :bucket => 'gl-music-site'
+                  :bucket => 'gl-music-site',
+                  :s3_credentials => "#{Rails.root}/config/aws.yml"
 
 
 

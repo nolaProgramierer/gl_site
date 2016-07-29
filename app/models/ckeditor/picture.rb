@@ -19,7 +19,8 @@ has_attached_file :data,
                   styles: { content: '800>', thumb: '118x100#' },
 
                   :storage => :s3,
-                  :bucket => 'gl-music-site'
+                  :bucket => 'gl-music-site',
+                  :s3_credentials => "#{Rails.root}/config/aws.yml"
 
 
 
