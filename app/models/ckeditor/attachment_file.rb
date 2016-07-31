@@ -12,14 +12,7 @@ class Ckeditor::AttachmentFile < Ckeditor::Asset
 #   end
 # end
 has_attached_file :data,
-                  # url: '/ckeditor_assets/attachments/:id/:filename',
-                  url: 'https://s3.amazonaws.com',
-                  # path: ':rails_root/public/ckeditor_assets/attachments/:id/:filename',
-                  path: ':id/:filename',
-                  :storage => :s3,
-                  :bucket => 'gl-music-site',
-                  :s3_credentials => "#{Rails.root}/config/aws.yml"
-
+                  path: ':rails_root/public/ckeditor_assets/attachments/:id/:filename'
 
 
 validates_attachment_presence :data
