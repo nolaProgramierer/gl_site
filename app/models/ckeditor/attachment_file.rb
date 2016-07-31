@@ -13,7 +13,7 @@ class Ckeditor::AttachmentFile < Ckeditor::Asset
 # end
 has_attached_file :data,
                   # url: '/ckeditor_assets/attachments/:id/:filename',
-                  url: 'https://s3.amazonaws.com/gl-music-site/',
+                  url: 'https://s3.amazonaws.com',
                   path: ':rails_root/public/ckeditor_assets/attachments/:id/:filename',
                   :storage => :s3,
                   :bucket => 'gl-music-site',
