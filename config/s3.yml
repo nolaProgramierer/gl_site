@@ -2,6 +2,6 @@
 # but at the same time not set them in the envirnment variables of the shell.
 # config/s3.yml
 
-access_key_id: AKIAITIPG6T7WY4DD7IQ
-secret_access_key: 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
-s3_host_name: s3-us-west-2.amazonaws.com
+# access_key_id: AKIAITIPG6T7WY4DD7IQ
+# secret_access_key: 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
+# s3_host_name: s3-us-west-2.amazonaws.com
