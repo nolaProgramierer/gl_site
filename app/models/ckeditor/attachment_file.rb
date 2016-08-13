@@ -16,11 +16,12 @@ class Ckeditor::AttachmentFile < Ckeditor::Asset
 
 has_attached_file :data,
                     # :url  => "/ckeditor_assets/pictures/:id/:style_:basename.:extension",
-                    :url  => "gl-music-site.s3.amazonaws.com",
+                    :url  => "s3.amazonaws.com",
                     :path => "/ckeditor_assets/pictures/:id/:style_:basename.:extension",
                     :styles => { :content => '800>', :thumb => '118x100#' },
                     :storage => :s3,
                     :bucket => 'gl-music-site',
+                    :s3_region => 'us-west-2',
                     :s3_credentials => "#{Rails.root}/config/aws.yml"
 
 
