@@ -16,7 +16,7 @@ class Ckeditor::AttachmentFile < Ckeditor::Asset
 
 has_attached_file :data,
                     # :url  => "/ckeditor_assets/pictures/:id/:style_:basename.:extension",
-                    :url  => "s3.amazonaws.com",
+                    :url  => "/ckeditor_assets/pictures/:id/:style_:basename.:extension",
                     :path => "/ckeditor_assets/pictures/:id/:style_:basename.:extension",
                     :styles => { :content => '800>', :thumb => '118x100#' },
                     :storage => :s3,
