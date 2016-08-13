@@ -84,15 +84,35 @@ Rails.application.configure do
 #     s3_region: ENV.fetch('us-west-2'),
 #   }
 # }
-config.paperclip_defaults = {
-    storage: :s3,
+# config.paperclip_defaults = {
+#     storage: :s3,
+#     s3_region: ENV['us-east-1'],
+#
+#     s3_credentials: {
+#       s3_host_name: ENV.['s3.amazonaws.com'],
+#       bucket: ENV['gl-music-site'],
+#       access_key_id: ENV['AKIAITIPG6T7WY4DD7IQ'],
+#       secret_access_key: ENV['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']
+#       }
+#     }
 
-    s3_credentials: {
-      s3_host_name: ENV['s3.amazonaws.com'],
-      bucket: ENV['gl-music-site'],
-      access_key_id: ENV['AKIAITIPG6T7WY4DD7IQ'],
-      secret_access_key: ENV['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'],
-      s3_region: ENV['us-east-1']
+    config.paperclip_defaults = {
+        # storage: :s3,
+        # s3_credentials: {
+        #   s3_host_name: ENV.['s3.amazonaws.com'],
+        #   bucket: ENV['gl-music-site'],
+        #   access_key_id: ENV['AKIAITIPG6T7WY4DD7IQ'],
+        #   secret_access_key: ENV['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'],
+        #   s3_region: ENV['us-east-1']
+        #   }
+        # }
+
+        storage: :s3,
+        s3_credentials: {
+         bucket: ENV.fetch('gl-music-site'),
+         access_key_id: ENV.fetch('AKIAITIPG6T7WY4DD7IQ'),
+         secret_access_key: ENV.fetch('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'),
+         s3_region: ENV.fetch('us-east-1')
+       }
       }
-    }
 end
