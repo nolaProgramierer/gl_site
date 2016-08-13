@@ -23,7 +23,9 @@ has_attached_file :data,
                     :bucket => 'gl-music-site',
                     :s3_region => 'us-west-2',
                     :s3_credentials => "#{Rails.root}/config/aws.yml"
-
+validates_attachment_presence :data
+validates_attachment_size :data, less_than: 2.megabytes
+validates_attachment_content_type :data, content_type: /\Aimage/
 
   def url_thumb
     @url_thumb ||= Ckeditor::Utils.filethumb(filename)
