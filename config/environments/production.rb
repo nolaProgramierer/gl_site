@@ -85,11 +85,13 @@ Rails.application.configure do
 #   }
 # }
 config.paperclip_defaults = {
-    :storage => :s3,
-    :url => ':s3_alias_url',
-    :path => "/:class/:id/:style/:clean_filename",
-    :s3_host_alias => 's3-us-west-2.amazonaws.com/gl-music-site',
-    :s3_credentials => "#{Rails.root}/config/s3.yml"
-}
-
+    storage: :s3,
+    s3_region: ENV["us-west-2"],
+    s3_credentials: {
+      s3_host_name: ENV["s3-us-west-2.amazonaws.com"],
+      bucket: ENV["gl-music-site"],
+      access_key_id: ENV["AKIAITIPG6T7WY4DD7IQ"],
+      secret_access_key: ENV["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"]
+      }
+    }
 end
