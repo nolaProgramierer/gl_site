@@ -42,6 +42,7 @@ Rails.application.configure do
   config.paperclip_defaults = {
   :storage => :s3,
   :s3_host_name => 's3.amazonaws.com',
-  :bucket => 'gl-music-site'
+  :bucket => 'gl-music-site',
+  :s3_region => 'us-east-1'
 }
 end
