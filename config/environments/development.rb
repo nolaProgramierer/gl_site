@@ -39,13 +39,23 @@ Rails.application.configure do
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 
+  # config.paperclip_defaults = {
+  #     storage: :s3,
+  #     bucket: 'gl-music-site',
+  #     s3_region: 'us-east-1',
+  #     s3_credentials: {
+  #       # access_key_id: ENV['AWS_ACCESS_KEY_ID'],
+  #       # secret_access_key: ENV['AWS_SECRET_ACCESS_KEY']
+  #       access_key_id: 'AKIAITIPG6T7WY4DD7IQ',
+  #       secret_access_key: '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'
+  #
+  #     }
+  #   }
+
   config.paperclip_defaults = {
-      storage: :s3,
-      bucket: 'gl-music-site',
-      s3_credentials: {
-        access_key_id: ENV.fetch('AWS_ACCESS_KEY_ID'),
-        secret_access_key: ENV.fetch('AWS_SECRET_ACCESS_KEY'),
-        s3_region: ENV.fetch('AWS_REGION'),
-      }
-    }
+  storage: :s3,
+  s3_region: 'us-east-1',
+  bucket:'gl-music-site',
+  s3_credentials: "#{Rails.root}/config/aws.yml"
+  }
 end
