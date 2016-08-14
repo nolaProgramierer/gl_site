@@ -40,9 +40,12 @@ Rails.application.configure do
   # config.action_view.raise_on_missing_translations = true
 
   config.paperclip_defaults = {
-  :storage => :s3,
-  :s3_host_name => 's3.amazonaws.com',
-  :bucket => 'gl-music-site',
-  :s3_region => 'us-east-1'
-}
+      storage: :s3,
+      bucket: 'gl-music-site',
+      s3_credentials: {
+        access_key_id: ENV.fetch('AWS_ACCESS_KEY_ID'),
+        secret_access_key: ENV.fetch('AWS_SECRET_ACCESS_KEY'),
+        s3_region: ENV.fetch('AWS_REGION'),
+      }
+    }
 end
