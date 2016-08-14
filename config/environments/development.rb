@@ -39,7 +39,7 @@ Rails.application.configure do
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 
-  cconfig.paperclip_defaults = {
+  config.paperclip_defaults = {
   :storage => :s3,
   :s3_host_name => 's3.amazonaws.com',
   :bucket => 'gl-music-site'
