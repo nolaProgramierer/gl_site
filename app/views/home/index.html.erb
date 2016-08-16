@@ -93,13 +93,15 @@
     <div class="row" id="media-clips">
         <div class="col-md-6" id="stravinsky-clip">
             <div class="embed-responsive embed-responsive-16by9">
-              <%= video_tag(["/videos/stravinsky_etude4.mp4", "/videos/stravinsky_etude4HD.webm"], controls: true,
+              <%= video_tag(["https://s3.amazonaws.com/gl-music-site/videos/stravinsky_etude4.mp4",
+                "https://s3.amazonaws.com/gl-music-site/videos/stravinsky_etude4HD.webm"], controls: true,
               autobuffer: true, poster: "stravinsky_etude_poster.jpg", class: "embed-responsive-item center-block")%>
               </div>
         </div>
         <div class="col-md-6" id="phantom-clip">
             <div class="embed-responsive embed-responsive-16by9">
-              <%= video_tag(["/videos/phantom480x360_edit.webm","/videos/phantom480x360_edit.mp4"], controls: true,
+              <%= video_tag(["https://s3.amazonaws.com/gl-music-site/videos/phantom480x360_edit.mp4",
+                "https://s3.amazonaws.com/gl-music-site/videos/phantom480x360_edit.webm"], controls: true,
               autobuffer: true, class: "center-block embed-responsive-item") %>
              </div>
         </div>
