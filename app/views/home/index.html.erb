@@ -171,9 +171,14 @@
         </div>
 
       <div class="row" id="blog-links">
-        <div class="col-md-3">
+
+        <% @articles.each do |article| %>
+          <div class="col-md-3"><%= link_to article.title, article %></div>
+        <% end %>
+
+        <!-- <div class="col-md-3">
           <div>
-            <%= link_to "Glenn's Blog", articles_path %>
+            <%= link_to "Glenn's Blog", articles_path%>
           </div>
         </div>
         <div class="col-md-3">
@@ -190,7 +195,7 @@
           <div>
             <%= link_to "And finally another link to Glenn's Blog", articles_path %>
           </div>
-        </div>
+        </div> -->
       </div>
 
 
