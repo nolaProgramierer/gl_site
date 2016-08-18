@@ -171,9 +171,30 @@
         </div>
 
       <div class="row" id="blog-links">
-        <% @articles.each do |article| %>
-          <div class="col-md-3"><%= link_to article.title, article %></div>
-        <% end %>
+
+
+
+        <div class="col-md-3">
+          <div>
+            <!-- article_path helper method to find most recent blog entries by index-->
+            <%= link_to "Glenn's Blog", article_path(article_helper(0)) %>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div>
+            <%= link_to "Another link to Glenn's Blog", article_path(article_helper(1)) %>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div>
+            <%= link_to "And another link to Glenn's Blog", article_path(article_helper(2)) %>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div>
+            <%= link_to "And finally another link to Glenn's Blog", article_path(article_helper(3)) %>
+          </div>
+        </div>
       </div>
 
 
