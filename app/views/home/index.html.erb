@@ -171,36 +171,52 @@
         </div>
 
       <div class="row" id="blog-links">
-
-
-
         <div class="col-md-3">
-          <div>
-            <!-- article_path helper method to find most recent blog entries by index-->
-            <%= link_to image_tag("https://s3.amazonaws.com/gl-music-site/blog_link_images/140105_Finlandia250x320.jpg",
-             alt: "Finlandia score", class: "center-block img-rounded" ), article_path(article_helper(0)) %>
-
+          <div class="blog-box center-block">
+            <div class="blog-caption text-center">
+              <h3>Blog Caption</h3>
+              <p>This is blog text</p>
+                <!-- article_path helper method to find most recent blog entries by index-->
+                <p><%= link_to "Read more", article_path(article_helper(0)), class: "btn btn-info" %></p>
+            </div>
+            <%=  image_tag("https://s3.amazonaws.com/gl-music-site/blog_link_images/140105_Finlandia250x320.jpg",
+             alt: "Finlandia score", class: "img-rounded" ) %>
           </div>
         </div>
         <div class="col-md-3">
-          <div>
-            <%= link_to image_tag("https://s3.amazonaws.com/gl-music-site/blog_link_images/cirqueFlyingMan250x320.jpg",
-             alt: "Cirque de la Symphonie man flying", class: "center-block img-rounded" ), article_path(article_helper(1)) %>
+          <div class="blog-box center-block">
+            <div class="blog-caption text-center">
+              <h3>Blog Caption</h3>
+              <p>This is blog text</p>
+                <p><%= link_to "Read more", article_path(article_helper(1)), class: "btn btn-info" %></p>
+            </div>
+            <%= image_tag("https://s3.amazonaws.com/gl-music-site/blog_link_images/cirqueFlyingMan250x320.jpg",
+             alt: "Cirque de la Symphonie man flying", class: "img-rounded" ) %>
+         </div>
+       </div>
+        <div class="col-md-3">
+          <div class="blog-box center-block">
+            <div class="blog-caption text-center">
+              <h3>Blog Caption</h3>
+              <p>This is blog text</p>
+                <p><%= link_to "Read more", article_path(article_helper(2)), class: "btn btn-info" %></p>
+            </div>
+            <%= image_tag("https://s3.amazonaws.com/gl-music-site/blog_link_images/cirqueJugglerRings250x320.jpg",
+             alt: "Cirque de la Symphonie juggler with rings", class: "img-rounded" ) %>
           </div>
         </div>
         <div class="col-md-3">
-          <div>
-            <%= link_to image_tag("https://s3.amazonaws.com/gl-music-site/blog_link_images/cirqueJugglerRings250x320.jpg",
-             alt: "Cirque de la Symphonie juggler with rings", class: "center-block img-rounded" ), article_path(article_helper(2)) %>
+          <div class="blog-box center-block">
+            <div class="blog-caption text-center">
+              <h3>Blog Caption</h3>
+              <p>This is blog text</p>
+              <p><%= link_to "Read more", article_path(article_helper(3)), class: "btn btn-info" %></p>
+            </div>
+            <%= image_tag("https://s3.amazonaws.com/gl-music-site/blog_link_images/cirqueRedGirl250x350.jpg",
+             alt: "Cirque de la Symphonie girl flying", class: "img-rounded" ) %>
           </div>
         </div>
-        <div class="col-md-3">
-          <div>
-            <%= link_to image_tag("https://s3.amazonaws.com/gl-music-site/blog_link_images/cirqueRedGirl250x350.jpg",
-             alt: "Cirque de la Symphonie girl flying", class: "center-block img-rounded" ), article_path(article_helper(3)) %>
-          </div>
-        </div>
-      </div>
+      </div><!--row-->
 
 
         <div class="row social-icons" id="contact">

@@ -72,5 +72,15 @@ $(document).ready(function(){
 	 }
 	);//end hover
 
+  // // caption hover effect for blog links
+  $('.blog-box').hover(
+    function(){
+      $(this).find('.blog-caption').stop().animate({height: "75%", opacity: "0.8"}, 400)
+    },
+    function(){
+      $(this).find('.blog-caption').stop().animate({height: "15%", opacity: "0.6"}, 1000)
+    }
+  ); // end hover
+
 
 }); // end ready
