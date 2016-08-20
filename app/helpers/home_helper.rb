@@ -5,4 +5,10 @@ module HomeHelper
     @articles = Article.order('created_at DESC').first(4)
     @article = @articles.fetch(index)
   end
+
+  def blog_title(index)
+    @articles = Article.order('created_at DESC').first(4)
+    @article = @articles.fetch(index)
+    @article.title.html_safe
+  end
 end

@@ -178,7 +178,8 @@
         <div class="col-md-3">
           <div class="blog-box center-block">
             <div class="blog-caption text-center">
-              <h3>Blog Caption</h3>
+              <!-- helper method to return blog title-->
+              <h3><%= blog_title(0) %></h3>
               <p>This is blog text</p>
                 <!-- article_path helper method to find most recent blog entries by index-->
                 <p><%= link_to "Read more", article_path(article_helper(0)), class: "btn btn-info" %></p>
@@ -190,7 +191,7 @@
         <div class="col-md-3">
           <div class="blog-box center-block">
             <div class="blog-caption text-center">
-              <h3>Blog Caption</h3>
+              <h3><%= blog_title(1) %></h3>
               <p>This is blog text</p>
                 <p><%= link_to "Read more", article_path(article_helper(1)), class: "btn btn-info" %></p>
             </div>
@@ -201,7 +202,7 @@
         <div class="col-md-3">
           <div class="blog-box center-block">
             <div class="blog-caption text-center">
-              <h3>Blog Caption</h3>
+              <h3><%= blog_title(2) %></h3>
               <p>This is blog text</p>
                 <p><%= link_to "Read more", article_path(article_helper(2)), class: "btn btn-info" %></p>
             </div>
@@ -212,7 +213,7 @@
         <div class="col-md-3">
           <div class="blog-box center-block">
             <div class="blog-caption text-center">
-              <h3>Blog Caption</h3>
+              <h3><%= blog_title(3) %></h3>
               <p>This is blog text</p>
               <p><%= link_to "Read more", article_path(article_helper(3)), class: "btn btn-info" %></p>
             </div>
