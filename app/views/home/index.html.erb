@@ -180,7 +180,8 @@
             <div class="blog-caption text-center">
               <!-- helper method to return blog title-->
               <h3><%= blog_title(0) %></h3>
-              <p>This is blog text</p>
+              <!-- helper method to display first few words of blog post -->
+              <p><%= blog_text_teaser(0)%></p>
                 <!-- article_path helper method to find most recent blog entries by index-->
                 <p><%= link_to "Read more", article_path(article_helper(0)), class: "btn btn-info" %></p>
             </div>
@@ -192,7 +193,7 @@
           <div class="blog-box center-block">
             <div class="blog-caption text-center">
               <h3><%= blog_title(1) %></h3>
-              <p>This is blog text</p>
+              <p><%= blog_text_teaser(1)%></p>
                 <p><%= link_to "Read more", article_path(article_helper(1)), class: "btn btn-info" %></p>
             </div>
             <%= image_tag("https://s3.amazonaws.com/gl-music-site/blog_link_images/cirqueFlyingMan250x320.jpg",
@@ -203,7 +204,7 @@
           <div class="blog-box center-block">
             <div class="blog-caption text-center">
               <h3><%= blog_title(2) %></h3>
-              <p>This is blog text</p>
+              <p><%= blog_text_teaser(2)%></p>
                 <p><%= link_to "Read more", article_path(article_helper(2)), class: "btn btn-info" %></p>
             </div>
             <%= image_tag("https://s3.amazonaws.com/gl-music-site/blog_link_images/cirqueJugglerRings250x320.jpg",
@@ -214,7 +215,7 @@
           <div class="blog-box center-block">
             <div class="blog-caption text-center">
               <h3><%= blog_title(3) %></h3>
-              <p>This is blog text</p>
+              <p><%= blog_text_teaser(3)%></p>
               <p><%= link_to "Read more", article_path(article_helper(3)), class: "btn btn-info" %></p>
             </div>
             <%= image_tag("https://s3.amazonaws.com/gl-music-site/blog_link_images/cirqueRedGirl250x350.jpg",
