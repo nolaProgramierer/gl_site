@@ -75,10 +75,10 @@ $(document).ready(function(){
   // // caption hover effect for blog links
   $('.blog-box').hover(
     function(){
-      $(this).find('.blog-caption').stop().animate({height: "75%", opacity: "0.8"}, 400)
+      $(this).find('.blog-caption').stop().animate({height: "75%", opacity: "0.9"}, 400)
     },
     function(){
-      $(this).find('.blog-caption').stop().animate({height: "15%", opacity: "0.6"}, 1000)
+      $(this).find('.blog-caption').stop().animate({height: "20%", opacity: "0.6"}, 1000)
     }
   ); // end hover
 
