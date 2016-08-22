@@ -82,6 +82,13 @@ $(document).ready(function(){
     }
   ); // end hover
 
+  // $('#blog-nav-hamburger').click(function() {
+  //   var blogSliderWidth = $('.sidenav').width() == 200 ? "0px" : "200px";
+  //   $('.sidenav').animate({
+  //     width: blogSliderWidth
+  //   }); // end animate
+  // }); // end click
+
 
 }); // end ready
 
