@@ -95,7 +95,7 @@ $(document).ready(function(){
 
 // js for side nav in blog show view
 function openNav() {
-    document.getElementById("blog-sidenav").style.width = "250px";
+    document.getElementById("blog-sidenav").style.width = "200px";
 }
 /* Set the width of the side navigation to 0 */
 function closeNav() {
