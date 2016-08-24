@@ -38,10 +38,8 @@ gem 'paperclip', '~> 5.0'
 # Amazon web service for image uploads
 # gem 'aws-sdk', '~> 2'
 gem 'aws-sdk', '~> 2.5', '>= 2.5.1'
-
-
-# # VideoJS gem
-# gem 'videojs_rails', '~> 4.12', '>= 4.12.15'
+# Paginationg gme for index views
+gem 'will_paginate', '~> 3.1'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
