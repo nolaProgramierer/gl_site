@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   get 'signup' => 'users#new'
+  resources :users
 
   mount Ckeditor::Engine => '/ckeditor'
   resources :articles do
