@@ -43,19 +43,18 @@ body {
 blockquote {
 	margin-bottom: 0px;
 }
-/*.hidden-quotes {
-	opacity; 0;
-}*/
+
+/* colors */
+$flesh-color: #d8bdaa;
+$red-curtain: #8a3109;
+$black: #0b0f0e;
 
 /* bio section */
 a {
   outline: none !important;
 }
 #page2 {
-	/*background-color: #705e6c;*/
-	// background-color: #bd8169;
-	background-color: #d8bdaa;
-	// color: white;
+	background-color: $flesh-color;
 	color: black;
 }
 #bio {
@@ -66,12 +65,12 @@ a {
 	margin: 0px 0px 20px 20px;
 }
 #bio h1 {
-	color: #8a3109;
+	color: $red-curtain;
 	text-align: center;
 	font-size: 4rem;
 }
 .bio-text-highlight {
-	color: #8a3109;
+	color: $red-curtain;
 	font-size: 2rem;
 }
 .has-pullquote:before {
@@ -82,7 +81,7 @@ a {
 	top: 5px;
 	font-size: 4rem;
 	line-height: 4.25rem;
-	color: #8a3109;
+	color: $red-curtain;
 	// padding-left: 15px;
 	padding-right: 20px;
 	margin-bottom: 20px;
@@ -162,12 +161,12 @@ a {
 /* media section */
 
 #media-header {
-	background-color: #8a3109;
+	background-color: $red-curtain;
 	color: white;
 	padding: 25px 0px 20px 0px;
 }
 #media-clips {
-	background-color: #8a3109;
+	background-color: $red-curtain;
 }
 #phantom-clip {
 	// margin: 35px 0px 60px 0px
@@ -186,13 +185,12 @@ a {
 /* news section */
 #news-header {
 	// background-color: #bd8169;
-	background-color: #d8bdaa;
+	background-color: $flesh-color;
 	color: black;
 	padding-top: 20px;
 }
 #in-the-news {
-	// background-color: #bd8169;
-	background-color: #d8bdaa;
+	background-color: $flesh-color;
 	padding: 40px 0px 70px 0px;
 }
 .news-img {
@@ -234,10 +232,41 @@ a {
 	color: white;
 }
 
+// blog links
+.blog-box {
+	position: relative;
+	width: 250px;
+	height: 320px;
+	overflow: hidden;
+}
+.blog-caption {
+	position: absolute;
+	background: #fff;
+	opacity: 0.75;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 20%;
+	padding: 0%;
+	color: #000;
+}
+#blog-links-header {
+	background-color: $red-curtain;
+	color: #fff;
+	padding: 25px 0px 20px 0px;
+}
+#blog-links {
+	background-color: $red-curtain;
+	padding-bottom: 80px;
+}
+.blog-caption h3 {
+	padding-bottom: 10%;
+}
+
 /* contact */
 
 #contact {
-	background-color: #0b0f0e;
+	background-color: $black;
 	color: white;
 	padding-top: 30px;
 }
@@ -246,10 +275,12 @@ a {
 	overflow: hidden;
 }
 
+
 /* footer */
 
 #contact {
 	padding-left: 40px;
+	padding-top: 40px;
 }
 .social-icons a {
 	color: #CCC;
@@ -271,42 +302,11 @@ a {
 	color: #CCC;
 }
 #footer {
-	background-color: #0b0f0e;
+	background-color: $black;
 	color: white;
 	padding-top: 50px;
 }
 
-
-// blog links
-.blog-box {
-	position: relative;
-	width: 250px;
-	height: 320px;
-	overflow: hidden;
-}
-.blog-caption {
-	position: absolute;
-	background: #fff;
-	opacity: 0.75;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 20%;
-	padding: 0%;
-	color: #000;
-}
-#blog-links-header {
-	background-color: #8a3109;
-	color: #fff;
-	padding: 25px 0px 20px 0px;
-}
-#blog-links {
-	background-color: #8a3109;
-	padding-bottom: 80px;
-}
-.blog-caption h3 {
-	padding-bottom: 10%;
-}
 
 // display: none;
 // position: absolute;
@@ -318,14 +318,3 @@ a {
 // width: 250px;
 // height: 313px;
 // color:#fff !important;
-
-
-// textarea {
-//   resize: vertical;
-// }
-// .center {
-//   text-align: center;
-// }
-// .center h1 {
-//   margin-bottom: 10px;
-// }
