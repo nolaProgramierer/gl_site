@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'signup', to: 'users#new'
+
   mount Ckeditor::Engine => '/ckeditor'
   resources :articles do
     resources :comments
