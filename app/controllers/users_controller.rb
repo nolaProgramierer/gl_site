@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   include SessionsHelper
-  before_action :require_login
+  # before_action :require_login
 
   def show
     @user = User.find(params[:id])
