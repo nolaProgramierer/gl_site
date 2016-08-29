@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  before_action :require_login
 
   def show
     @user = User.find(params[:id])
@@ -21,4 +22,11 @@ class UsersController < ApplicationController
       def user_params
         params.require(:user).permit(:name, :email, :password, :password_confirmation)
       end
+
+      # Controller test for logged in users to prevent pages from being viewed
+    def require_login
+      if current_user.nil?
+        redirect_to login_path
+      end
+    end
 end

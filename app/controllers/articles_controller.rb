@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
-  http_basic_authenticate_with name: "ghl", password: "IPd7WXwl2FDkQV9e", except: [:show]
+  # http_basic_authenticate_with name: "ghl", password: "IPd7WXwl2FDkQV9e", except: [:show]
+  before_action :require_login, except: [:show]
   before_action :find_article, only: [:show, :edit, :update, :destroy]
 
     def index
@@ -48,4 +49,10 @@ class ArticlesController < ApplicationController
       def find_article
         @article = Article.find(params[:id])
       end
+
+      def require_login
+        if current_user.nil?
+        redirect_to login_path
+      end
+    end
   end
