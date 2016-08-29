@@ -1,5 +1,7 @@
 class ArticlesController < ApplicationController
-  http_basic_authenticate_with name: "ghl", password: "IPd7WXwl2FDkQV9e", except: [:show]
+  include SessionsHelper
+  # http_basic_authenticate_with name: "ghl", password: "IPd7WXwl2FDkQV9e", except: [:show]
+  before_action :require_login, except: [:show]
   before_action :find_article, only: [:show, :edit, :update, :destroy]
 
     def index

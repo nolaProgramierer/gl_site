@@ -61,11 +61,11 @@ body {
 
 // sidenav
 .sidenav {
-    height: 200px;
+    height: 150px;
     width: 0px;
     position: absolute;
     z-index: 1;
-    top: 0;
+    top: 120px;
     right: 0;
     background-color: #111;
     overflow-x: hidden; /* Disable horizontal scroll */
