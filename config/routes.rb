@@ -1,18 +1,19 @@
 Rails.application.routes.draw do
 
+  root 'home#index'
   get     'login',    to: 'sessions#new'
   post    'login',    to: 'sessions#create'
   delete  'logout',   to: 'sessions#destroy'
   get     'signup',   to: 'users#new'
 
-  mount Ckeditor::Engine => '/ckeditor'
-  resources :articles do
-    resources :comments
-  end
-
+  resources :articles
   resources :users
 
-  root 'home#index'
+  mount Ckeditor::Engine => '/ckeditor'
+
+
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
