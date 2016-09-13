@@ -66,10 +66,10 @@ a {
 	float: right;
 	margin: 0px 0px 20px 20px;
 }
-#bio h1 {
+#bio .section-title {
 	color: $red-curtain;
 	text-align: center;
-	font-size: 4rem;
+	padding-bottom: 20px;
 }
 .bio-text-highlight {
 	color: $red-curtain;
@@ -192,12 +192,12 @@ a {
 #news-header {
 	// background-color: #bd8169;
 	background-color: $flesh-color;
-	color: black;
+	color: $red-curtain;
 	padding: 70px 0px 40px 0px;
 }
 #in-the-news {
 	background-color: $flesh-color;
-	padding: 40px 0px 100px 0px;
+	padding: 40px 0px 120px 0px;
 }
 .news-img {
 	position: relative;
