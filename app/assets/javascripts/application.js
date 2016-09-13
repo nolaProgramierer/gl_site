@@ -44,6 +44,7 @@ $(document).ready(function(){
 		}
 	);	// end hover
 
+  // quote appear function
 	 $(window).scroll(function() {
 		 $('.scroll-quote').each(function(index, value) {
 			 var quote_bottom = $(this).offset().top + $(this).outerHeight();

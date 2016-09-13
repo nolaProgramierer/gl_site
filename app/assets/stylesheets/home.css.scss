@@ -39,9 +39,11 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-
 blockquote {
 	margin-bottom: 0px;
+}
+.section-title {
+	font-size: 5rem;
 }
 
 /* colors */
@@ -167,18 +169,18 @@ a {
 #media-header {
 	background-color: $red-curtain;
 	color: white;
-	padding: 25px 0px 20px 0px;
+	padding: 70px 0px 60px 0px;
 }
 #media-clips {
 	background-color: $red-curtain;
 }
 #phantom-clip {
 	// margin: 35px 0px 60px 0px
-	padding: 0px 150px 100px 150px;
+	padding: 0px 150px 150px 150px;
 }
 #stravinsky-clip {
 	// margin: 35px 0px 60px 0px
-	padding: 0px 150px 100px 150px;
+	padding: 0px 150px 150px 150px;
 }
 // .video-clips {
 // 	box-shadow: 5px 5px 5px gray;
@@ -191,11 +193,11 @@ a {
 	// background-color: #bd8169;
 	background-color: $flesh-color;
 	color: black;
-	padding-top: 20px;
+	padding: 70px 0px 40px 0px;
 }
 #in-the-news {
 	background-color: $flesh-color;
-	padding: 40px 0px 70px 0px;
+	padding: 40px 0px 100px 0px;
 }
 .news-img {
 	position: relative;
@@ -215,22 +217,26 @@ a {
 #chandelier {
 	// background: url("phantom_chandelier_web.jpg") 50% 0 no-repeat fixed;
 	background: url(image-path("phantom_chandelier_web.jpg")) 50% 0 no-repeat fixed;
-	min-height: 400px;
+	min-height: 600px;
 	width: 100%;
 }
 #chandelier-text0 {
 	color: white;
-	padding-top: 65px;
-	// font-size: 48px;
+	padding-top: 80px;
 	left: -150px;
 	opacity: 0;
+	blockquote {
+		font-size: 2.25rem;
+	}
 }
 #chandelier-text1 {
 	color: white;
 	padding-top: 70px;
-	// font-size: 48px;
 	left: -150px;
 	opacity: 0;
+	blockquote {
+		font-size: 2.25rem;
+	}
 }
 #chandelier blockquote footer {
 	color: white;
@@ -257,11 +263,11 @@ a {
 #blog-links-header {
 	background-color: $red-curtain;
 	color: #fff;
-	padding: 25px 0px 20px 0px;
+	padding: 50px 0px 40px 0px;
 }
 #blog-links {
 	background-color: $red-curtain;
-	padding-bottom: 80px;
+	padding-bottom: 130px;
 }
 .blog-caption h3 {
 	padding-bottom: 10%;
