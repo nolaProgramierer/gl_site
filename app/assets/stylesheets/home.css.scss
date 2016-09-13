@@ -132,22 +132,26 @@ a {
 #recital {
 	// background: url("gl_recital_web.jpg") 50% 0 no-repeat fixed;
 	background: url(image-path("gl_recital_web.jpg")) 50% 0 no-repeat fixed;
-	min-height: 400px;
+	min-height: 600px;
 	width: 100%;
 }
 #recital-text0  {
 	color: white;
-	padding-top: 50px;
-	// font-size: 48px;
+	padding-top: 100px;
 	left: -150px;
 	opacity: 0;
+	blockquote {
+		font-size: 2.25rem
+	}
 }
 #recital-text1 {
 	color: white;
-	padding-top: 70px;
-	// font-size: 48px;
+	padding-top: 100px;
 	right: -150px;
 	opacity: 0;
+	blockquote {
+		font-size: 2.25rem;
+	}
 }
 #recital blockquote footer {
 	color: white;
