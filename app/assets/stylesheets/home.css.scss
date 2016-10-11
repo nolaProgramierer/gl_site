@@ -260,6 +260,11 @@ a {
 	padding: 0%;
 	color: #000;
 }
+.blog-caption p:first-of-type {
+	text-align: left;
+	padding: 0px 20px 0 20px;
+	font-size: 0.9em;
+}
 #blog-links-header {
 	background-color: $red-curtain;
 	color: #fff;
