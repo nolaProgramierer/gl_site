@@ -87,70 +87,70 @@
     </div>
 
     <div class="row" id="media-background">
-    <div class="row" id="media-header">
-    <div class="section-title text-center">In Performance</div>
-    </div>
+      <div class="row" id="media-header">
+      <div class="section-title text-center">In Performance</div>
+      </div>
 
-    <div class="row" id="media-clips">
-        <div class="col-md-6" id="stravinsky-clip">
-            <div class="embed-responsive embed-responsive-16by9">
-              <%= video_tag(["https://s3.amazonaws.com/gl-music-site/videos/stravinsky_etude4.mp4",
-                "https://s3.amazonaws.com/gl-music-site/videos/stravinsky_etude4HD.webm"], controls: true,
-              autobuffer: true, poster: "stravinsky_etude_poster.jpg", class: "embed-responsive-item center-block")%>
-              </div>
-        </div>
-        <div class="col-md-6" id="phantom-clip">
-            <div class="embed-responsive embed-responsive-16by9">
-              <%= video_tag(["https://s3.amazonaws.com/gl-music-site/videos/phantom480x360_edit.mp4",
-                "https://s3.amazonaws.com/gl-music-site/videos/phantom480x360_edit.webm"], controls: true,
-              autobuffer: true, class: "center-block embed-responsive-item") %>
-             </div>
-        </div>
-    </div><!--row-->
-  </div><!--#media-background-->
+      <div class="row" id="media-clips">
+          <div class="col-md-6" id="stravinsky-clip">
+              <div class="embed-responsive embed-responsive-16by9">
+                <%= video_tag(["https://s3.amazonaws.com/gl-music-site/videos/stravinsky_etude4.mp4",
+                  "https://s3.amazonaws.com/gl-music-site/videos/stravinsky_etude4HD.webm"], controls: true,
+                autobuffer: true, poster: "stravinsky_etude_poster.jpg", class: "embed-responsive-item center-block")%>
+                </div>
+          </div>
+          <div class="col-md-6" id="phantom-clip">
+              <div class="embed-responsive embed-responsive-16by9">
+                <%= video_tag(["https://s3.amazonaws.com/gl-music-site/videos/phantom480x360_edit.mp4",
+                  "https://s3.amazonaws.com/gl-music-site/videos/phantom480x360_edit.webm"], controls: true,
+                autobuffer: true, class: "center-block embed-responsive-item") %>
+               </div>
+          </div>
+      </div><!--row-->
+    </div><!--#media-background-->
 
     <div class="row" id="news-container">
-    <div class="row" id="news-header">
-    	<div class="section-title text-center">In the News</div>
-    </div>
+      <div class="row" id="news-header">
+      	<div class="section-title text-center">In the News</div>
+      </div>
 
-    <div class="row" id="in-the-news">
-        <div class="col-md-4">
-            <div class="hover-img news-img">
-              <%= image_tag("broadway_web.jpg", alt: "Image of Times Square", class: "center-block img-rounded") %>
-                <!-- <img src="images/broadway_web.jpg" class="center-block img-rounded" alt="Image of Times Square."> -->
-                	<div class="caption-global caption text-center" id="batt-broadway">
-                    	<h3>Bryan Batt with the LPO</h3>
-                        <p>Glenn Langdon to conduct the Louisiana Philharmonic Orchestra with the star of <em>Mad Men</em>, Bryan Batt.</p>
-                        <p><a href=" https://www.lpomusic.com/online/article/broadways-best"
-                        class="btn btn-info btn-sm">See concert details</a></p>
-                    </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="hover-img news-img">
-              <%= image_tag("gl_cond_gretna.jpg", alt: "Glenn Langdon conducting the LPO", class: "center-block img-rounded") %>
-                <!-- <img src="images/gl_cond_gretna.jpg" class="center-block img-rounded" alt="Glenn Langdon conducting the LPO."> -->
-                    <div class="caption-global caption text-center" id="news-item-gretna-caption">
-                        <h3>Glenn Langdon conducts the LPO</h3>
-                        <p>Glenn Langdon conducting the Louisiana Philharmonic Orchestra in their Holiday Spectacular</p>
-                        <p><a href="http://photos.nola.com/tpphotos/2012/12/angelic_sounds_of_christmaszip_3.html"
-                        class="btn btn-info btn-sm">View article at NOLA.com</a></p>
-                     </div>
-            </div>
+      <div class="row" id="in-the-news">
+          <div class="col-md-4">
+              <div class="hover-img news-img">
+                <%= image_tag("broadway_web.jpg", alt: "Image of Times Square", class: "center-block img-rounded") %>
+                  <!-- <img src="images/broadway_web.jpg" class="center-block img-rounded" alt="Image of Times Square."> -->
+                  	<div class="caption-global caption text-center" id="batt-broadway">
+                      	<h3>Bryan Batt with the LPO</h3>
+                          <p>Glenn Langdon to conduct the Louisiana Philharmonic Orchestra with the star of <em>Mad Men</em>, Bryan Batt.</p>
+                          <p><a href=" https://www.lpomusic.com/online/article/broadways-best"
+                          class="btn btn-info btn-sm">See concert details</a></p>
+                      </div>
+              </div>
           </div>
-            <div class="col-md-4">
-            	<div class="hover-img news-img">
-                <%= image_tag("gl_cond_stairs.jpg", alt: "Glenn Langdon sitting on stairs", class: "center-block img-rounded") %>
-                	<!-- <img src="images/gl_cond_stairs.jpg" class="center-block img-rounded" alt="Glenn Langdon sitting on stairs"> -->
-                    	<div class="caption-global caption text-center" id="news-item-stairs-caption">
-                        	<h3>Glenn Langdon overcomes injury to perform again</h3>
-                            <p><a href="http://www.nola.com/nolavie/index.ssf/2011/12/glenn_langdon_pianist_and_lpo.html"
-                            class="btn btn-info btn-sm">View article at NOLA.com</a></p>
-                        </div>
-               </div>
-           </div>
-    	</div><!--row-->
+          <div class="col-md-4">
+              <div class="hover-img news-img">
+                <%= image_tag("gl_cond_gretna.jpg", alt: "Glenn Langdon conducting the LPO", class: "center-block img-rounded") %>
+                  <!-- <img src="images/gl_cond_gretna.jpg" class="center-block img-rounded" alt="Glenn Langdon conducting the LPO."> -->
+                      <div class="caption-global caption text-center" id="news-item-gretna-caption">
+                          <h3>Glenn Langdon conducts the LPO</h3>
+                          <p>Glenn Langdon conducting the Louisiana Philharmonic Orchestra in their Holiday Spectacular</p>
+                          <p><a href="http://photos.nola.com/tpphotos/2012/12/angelic_sounds_of_christmaszip_3.html"
+                          class="btn btn-info btn-sm">View article at NOLA.com</a></p>
+                       </div>
+              </div>
+            </div>
+              <div class="col-md-4">
+              	<div class="hover-img news-img">
+                  <%= image_tag("gl_cond_stairs.jpg", alt: "Glenn Langdon sitting on stairs", class: "center-block img-rounded") %>
+                  	<!-- <img src="images/gl_cond_stairs.jpg" class="center-block img-rounded" alt="Glenn Langdon sitting on stairs"> -->
+                      	<div class="caption-global caption text-center" id="news-item-stairs-caption">
+                          	<h3>Glenn Langdon overcomes injury to perform again</h3>
+                              <p><a href="http://www.nola.com/nolavie/index.ssf/2011/12/glenn_langdon_pianist_and_lpo.html"
+                              class="btn btn-info btn-sm">View article at NOLA.com</a></p>
+                          </div>
+                 </div>
+             </div>
+      	</div><!--row-->
     </div><!--#news-container-->
 
       <div class="row">
