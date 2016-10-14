@@ -19,8 +19,6 @@
 //= require ckeditor/init
 
 
-
-
 $(document).ready(function(){
 
 	// parallax function
@@ -82,6 +80,8 @@ $(document).ready(function(){
       $(this).find('.blog-caption').stop().animate({height: "20%", opacity: "0.6"}, 1000)
     }
   ); // end hover
+
+
 
   // $('#blog-nav-hamburger').click(function() {
   //   var blogSliderWidth = $('.sidenav').width() == 200 ? "0px" : "200px";
