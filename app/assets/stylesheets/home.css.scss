@@ -190,8 +190,10 @@ a {
 // .video-clips {
 // 	box-shadow: 5px 5px 5px gray;
 // }
-
-
+.media-caption {
+	color: white;
+	background-color: #808080;
+}
 
 /* news section */
 #news-container {
@@ -260,6 +262,8 @@ a {
 	height: 320px;
 	overflow: hidden;
 	box-shadow: 10px 10px 10px #000;
+	-webkit-box-shadow: 10px 10px 10px #000;
+  -moz-box-shadow: 10px 10px 10px #000;
 }
 .blog-caption {
 	position: absolute;
