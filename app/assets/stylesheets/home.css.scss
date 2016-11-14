@@ -6,9 +6,11 @@
 @import "font-awesome";
 
 /* universal */
+$serif-font-main: 'Vollkorn', serif;
+$sans-serif-font-main: 'Nobile', sans-serif;
 
 body {
-	font-family: 'Vollkorn', serif;
+	font-family: $serif-font-main;
 	font-size: 1.75rem;
   padding: 0px;
 }
@@ -43,6 +45,7 @@ blockquote {
 	margin-bottom: 0px;
 }
 .section-title {
+	font-family: $sans-serif-font-main;
 	font-size: 5rem;
 }
 
@@ -89,6 +92,7 @@ a {
 	margin-bottom: 20px;
 	margin-right: 15px;
 	text-align: right;
+	font-family: 'Nobile', sans-serif;
 }
 #cotton-field-img {
 	float: left;
