@@ -5,10 +5,14 @@
 @import "bootstrap";
 @import "font-awesome";
 
+
+// $serif-font-main: 'Vollkorn', serif;
+$sans-serif-font-main: 'Nobile', sans-serif;
+$serif-font-main: 'Nobile', sans-serif;
 // universal
 body {
   background-color: #d8bdaa;
-  font-family: 'Vollkorn', serif;
+  // font-family: $serif-font-main;
 	font-size: 1.75rem;
 }
 #navbar-header {
@@ -24,6 +28,7 @@ body {
   margin-left: 20px;
 }
 .article-title {
+  font-family: $sans-serif-font-main;
 	text-align: center;
   background-color: white;
   opacity: 0.9;
