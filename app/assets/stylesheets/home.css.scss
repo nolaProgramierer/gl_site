@@ -7,7 +7,7 @@
 
 /* universal */
 $serif-font-main: 'Vollkorn', serif;
-$sans-serif-font-main: 'Nobile', sans-serif;
+$sans-serif-font-main: 'Lato', sans-serif;
 
 body {
 	font-family: $serif-font-main;
@@ -121,7 +121,7 @@ a {
 	margin-bottom: 20px;
 	margin-right: 15px;
 	text-align: right;
-	font-family: 'Nobile', sans-serif;
+	font-family: $sans-serif-font-main;
 }
 #cotton-field-img {
 	float: left;
