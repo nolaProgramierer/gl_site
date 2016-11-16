@@ -221,12 +221,18 @@ a {
 	// margin: 35px 0px 60px 0px
 	padding: 0px 150px 150px 150px;
 }
+#rite-clip {
+	padding: 0px 150px 150px 150px;
+}
 // .video-clips {
 // 	box-shadow: 5px 5px 5px gray;
 // }
 .media-caption {
 	color: white;
 	background-color: #808080;
+	a {
+		color: white;
+	}
 }
 
 /* news section */
