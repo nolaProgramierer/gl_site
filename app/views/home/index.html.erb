@@ -98,21 +98,24 @@
 
     <div class="row" id="media-background">
       <div class="row" id="media-header">
-      <div class="section-title text-center">In Performance</div>
+        <div class="section-title text-center">In Performance</div>
       </div>
 
       <div class="row" id="media-clips">
           <div class="col-md-6" id="stravinsky-clip">
+            <div class="video-border">
               <div class="embed-responsive embed-responsive-16by9">
                 <%= video_tag(["https://s3.amazonaws.com/gl-music-site/videos/stravinsky_etude4.mp4",
                   "https://s3.amazonaws.com/gl-music-site/videos/stravinsky_etude4HD.webm"], controls: true,
                 autobuffer: true, poster: "stravinsky_etude_poster.jpg", class: "embed-responsive-item center-block")%>
                 </div>
-                <div class="media-caption text-center">
+                <div class="media-caption text-center video-border">
                   An excerpt from a recital at Klavierhaus, NYC. January 23, 2011.
                 </div>
+            </div>
           </div>
           <div class="col-md-6" id="phantom-clip">
+            <div class="video-border">
               <div class="embed-responsive embed-responsive-16by9">
                 <%= video_tag(["https://s3.amazonaws.com/gl-music-site/videos/phantom480x360_edit.mp4",
                   "https://s3.amazonaws.com/gl-music-site/videos/phantom480x360_edit.webm"], controls: true,
@@ -121,23 +124,23 @@
                <div class="media-caption text-center">
                  An excerpt from a live performance of Andrew Lloyd Webber's the <em>Phantom of the Opera</em>.
                </div>
+             </div>
           </div>
-
-
           <div class="col-md-6 col-md-offset-3" id="rite-clip">
-            <div class="embed-responsive embed-responsive-4by3">
-              <%= video_tag(["https://s3.amazonaws.com/gl-music-site/videos/rite_spring.mp4",
-                "https://s3.amazonaws.com/gl-music-site/videos/rite_spring.webmhd.webm"], controls: true,
-              poster: "rite-poster_400x294.jpg", autobuffer: true, class: "center-block embed-responsive-item") %>
+            <div class="video-border">
+              <div class="embed-responsive embed-responsive-4by3">
+                <%= video_tag(["https://s3.amazonaws.com/gl-music-site/videos/rite_spring.mp4",
+                  "https://s3.amazonaws.com/gl-music-site/videos/rite_spring.webmhd.webm"], controls: true,
+                poster: "rite-poster_400x294.jpg", autobuffer: true, class: "center-block embed-responsive-item") %>
+               </div>
+               <div class="media-caption text-center">
+                 Excerpts of Glenn Langdon conducting in the pit from an archive of a 1988 performance of Igor Stravinsky's the
+                 <em>the Rite of Spring</em> featuring <em>
+                   <a href="https://www.amazon.com/Maos-Last-Dancer-Li-Cunxin/dp/0425201333/ref=sr_1_1?s=
+                   books&ie=UTF8&qid=1479336465&sr=1-1&keywords=Mao%27s+Last+Dancer">Mao's Last Dancer</em></a>,
+                   <a href="http://www.licunxin.com/">Li Cunxin</a>.
              </div>
-             <div class="media-caption text-center">
-               Excerpts of Glenn Langdon conducting in the pit from an archive of a 1988 performance of Igor Stravinsky's the
-               <em>the Rite of Spring</em> featuring <em>
-                 <a href="https://www.amazon.com/Maos-Last-Dancer-Li-Cunxin/dp/0425201333/ref=sr_1_1?s=
-                 books&ie=UTF8&qid=1479336465&sr=1-1&keywords=Mao%27s+Last+Dancer">Mao's Last Dancer</em></a>,
-                 <a href="http://www.licunxin.com/">Li Cunxin</a>.
-             </div>
-
+           </div>
           </div>
 
       </div><!--row-->
