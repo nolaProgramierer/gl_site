@@ -214,11 +214,9 @@ a {
 	// background-color: $red-curtain;
 }
 .video-border {
-	box-shadow: 5px 5px 5px #000;
-	-webkit-box-shadow: 5px 5px 5px #000;
-  -moz-box-shadow: 5px 5px 5px #000;
-
-
+	-webkit-box-shadow: 0 10px 6px -6px #000;
+	   -moz-box-shadow: 0 10px 6px -6px #000;
+	        box-shadow: 0 10px 6px -6px #000;
 }
 #phantom-clip {
 	// margin: 35px 0px 60px 0px
