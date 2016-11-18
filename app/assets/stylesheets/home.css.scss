@@ -274,6 +274,11 @@ a {
 	position: relative;
 	overflow: hidden;
 }
+.news-img-border {
+	-webkit-box-shadow: 0 10px 6px -6px #000;
+	   -moz-box-shadow: 0 10px 6px -6px #000;
+	        box-shadow: 0 10px 6px -6px #000;
+}
 #batt-broadway {
 	padding-top: 20px;
 }
