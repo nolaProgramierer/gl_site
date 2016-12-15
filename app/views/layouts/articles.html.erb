@@ -27,9 +27,6 @@
               <% if logged_in? %>
               <li><%= link_to "Log out", logout_path, method: "delete" %></li>
               <% end %>
-              <% if !logged_in? %>
-              <li><%= link_to "&#9776".html_safe, "javascript:openNav()", id: "blog-nav-hamburger" %></li>
-              <% end %>
             </ul>
           </nav>
         </div>
