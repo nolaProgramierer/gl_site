@@ -5,14 +5,11 @@
 @import "bootstrap";
 @import "font-awesome";
 
-
-// $serif-font-main: 'Vollkorn', serif;
 $sans-serif-font-main: 'Nobile', sans-serif;
-$serif-font-main: 'Nobile', sans-serif;
-// universal
+$serif-font-main: 'Vollkorn', serif;
+
 body {
   background-color: #d8bdaa;
-  // font-family: $serif-font-main;
 	font-size: 1.75rem;
 }
 #navbar-header {
@@ -28,24 +25,22 @@ body {
   margin-left: 20px;
   border: 1px solid black;
   font-size: 1.5rem;
-}
-#article-listing a {
-  text-decoration: none;
-}
-#article-listing a:hover {
-  color: lightgray;
+  a {
+    text-decoration: none;
+    &:hover {
+      color: lightgray;
+    }
+  }
 }
 .article-title {
   font-family: $sans-serif-font-main;
 	text-align: center;
   background-color: white;
-  // opacity: 0.9;
   padding-top: 20px;
   padding-bottom: 10px;
 }
 .article-body {
   background-color: white;
-  // opacity: 0.9;
   font-size: 1.75rem;
   padding: 0px 25px 25px 25px;
   overflow: hidden;
@@ -53,7 +48,6 @@ body {
 }
 #disqus_thread {
   background-color: white;
-  // opacity: 0.9;
   margin-top: 20px;
   padding: 15px 15px 0px 15px;
   border: 1px solid black;
@@ -86,27 +80,27 @@ body {
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 35px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-}
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #818181;
-    display: block;
-    transition: 0.3s
+    a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        display: block;
+        transition: 0.3s
+    }
+    .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 75px;
+    }
+    h3 {
+      color: #f1f1f1;
+    }
 }
 .sidenav a:hover, .offcanvas a:focus{
     color: #f1f1f1;
-}
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 75px;
-}
-.sidenav h3 {
-  color: #f1f1f1;
 }
 #blog-nav-hamburger {
   font-size: 30px;

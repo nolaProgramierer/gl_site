@@ -31,11 +31,11 @@ body {
 	height: 225px;
 	color:#fff !important;
 	/*another way to center absolutely positioned element */
-	/*left: 50%;
-	margin-left: -150px;*/
-	 /*yet another way to center absolutely positioned element */
-	/*left: 50%;
-	transform: translate(-50%);*/
+		/*left: 50%;
+		margin-left: -150px;*/
+ 	/*yet another way to center absolutely positioned element */
+		/*left: 50%;
+		transform: translate(-50%);*/
 }
 .center-block {
   display: block;
@@ -60,7 +60,6 @@ a {
   outline: none !important;
 }
 #page2 {
-	// background-color: $flesh-color;
 	background: url(image-path("bio-bckgrd-img.jpg")) no-repeat center center;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
@@ -139,19 +138,10 @@ a {
 	width: 250px;
 	height: 313px;
 	color:#fff !important;
-	/*another way to center absolutely positioned element */
-	/*left: 50%;
-	margin-left: -150px;*/
-	 /*yet another way to center absolutely positioned element */
-	/*left: 50%;
-	transform: translate(-50%);*/
 }
 
-
 /* piano_parallax */
-
 #recital {
-	// background: url("gl_recital_web.jpg") 50% 0 no-repeat fixed;
 	background: url(image-path("gl_recital_web.jpg")) 50% 0 no-repeat fixed;
 	min-height: 600px;
 	width: 100%;
@@ -191,12 +181,8 @@ a {
   background-size: cover;
 }
 #media-header {
-	// background-color: $red-curtain;
 	color: white;
 	padding: 70px 0px 60px 0px;
-}
-#media-clips {
-	// background-color: $red-curtain;
 }
 .video-border {
 	-webkit-box-shadow: 0 10px 6px -6px #000;
@@ -233,8 +219,6 @@ a {
   background-size: cover;
 }
 #news-header {
-	// background-color: #bd8169;
-	// background-color: $flesh-color;
 	color: $red-curtain;
 	padding: 70px 0px 40px 0px;
 }
@@ -263,7 +247,6 @@ a {
 
 /* chandelier parallax */
 #chandelier {
-	// background: url("phantom_chandelier_web.jpg") 50% 0 no-repeat fixed;
 	background: url(image-path("phantom_chandelier_web.jpg")) 50% 0 no-repeat fixed;
 	min-height: 600px;
 	width: 100%;
@@ -330,7 +313,6 @@ a {
 }
 
 /* contact */
-
 #contact {
 	background-color: $black;
 	color: white;
@@ -341,9 +323,7 @@ a {
 	overflow: hidden;
 }
 
-
 /* footer */
-
 #contact {
 	padding-left: 40px;
 	padding-top: 40px;
@@ -351,9 +331,9 @@ a {
 .social-icons a {
 	color: #CCC;
 	text-decoration: none;
-}
-.social-icons a:hover {
-	color: white;
+	&:hover {
+		color: white;
+	}
 }
 .linked-in-blue {
 	color: #03F;
@@ -372,15 +352,3 @@ a {
 	color: white;
 	padding-top: 50px;
 }
-
-
-// display: none;
-// position: absolute;
-// top: 0;
-// left: 0;
-// right: 0;
-// margin: auto;
-// background: rgba(0,0,0,0.4);
-// width: 250px;
-// height: 313px;
-// color:#fff !important;
