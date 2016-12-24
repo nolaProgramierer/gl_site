@@ -5,14 +5,11 @@ Rails.application.routes.draw do
   post    'login',    to: 'sessions#create'
   delete  'logout',   to: 'sessions#destroy'
   get     'signup',   to: 'users#new'
-
+  get     'sitemap',  to: 'sitemaps#index',   defaults: { format: 'xml'}
   resources :articles
   resources :users
 
   mount Ckeditor::Engine => '/ckeditor'
-
-
-
 
 
   # The priority is based upon order of creation: first created -> highest priority.
