@@ -15,22 +15,4 @@
   <%= render 'blog_section' %>
   <%= render 'contact_section' %>
 
-  <%= form_for @contact, url: home_index_path, remote: true do |f| %>
-
-    <%= f.label :name %>
-    <%= f.text_field  :name, required: true, class: "contact-form-text-area" %></br>
-
-    <%= f.label :email %>
-    <%= f.text_field :email, required: true, class: "contact-form-text-area" %></br>
-
-    <%= f.label :message %>
-    <%= f.text_area :message, rows: 8, required: true, class: "contact-form-text-area",
-                      placeholder: "Hello, I'd love to teach a master class for your students."%></br>
-
-    <div class= "hidden">
-      <%= f.label :nickname %>
-      <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
-    </div>
-
-    <%= f.submit 'Send Message', class: 'btn btn-primary' %>
-  <% end %>
+  
