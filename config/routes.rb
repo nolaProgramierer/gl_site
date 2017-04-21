@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root 'home#index'
+  root    'home#index'
   get     'login',    to: 'sessions#new'
   post    'login',    to: 'sessions#create'
   delete  'logout',   to: 'sessions#destroy'
@@ -8,9 +8,7 @@ Rails.application.routes.draw do
   get     'sitemap',  to: 'sitemaps#index',   defaults: { format: 'xml'}
   resources :articles
   resources :users
-  resources :home do
-    post :contact, on: :collection
-  end
+  resources :home, only: [:index, :new, :create]
 
   mount Ckeditor::Engine => '/ckeditor'
 
