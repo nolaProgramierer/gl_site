@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   get     'sitemap',  to: 'sitemaps#index',   defaults: { format: 'xml'}
   resources :articles
   resources :users
-  resources :home, only: [:index, :new, :create] do
+  resources :home do
     post :contact, on: :collection
   end
 
