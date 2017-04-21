@@ -55,6 +55,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'minitest-reporters', '~> 1.1', '>= 1.1.9'
+  gem 'dotenv-rails', '~> 2.2'
 end
 
 group :development do
@@ -75,3 +76,4 @@ group :production do
 end
 
 gem 'nokogiri', '~> 1.6', '>= 1.6.8'
+gem 'mail_form', '~> 1.6'
