@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.2.3'
 
-
+gem 'dotenv', '~> 2.2', groups: [:development, :test]
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 
@@ -55,7 +55,6 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'minitest-reporters', '~> 1.1', '>= 1.1.9'
-  gem 'dotenv-rails', '~> 2.2'
 end
 
 group :development do
