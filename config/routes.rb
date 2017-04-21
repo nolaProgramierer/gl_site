@@ -8,9 +8,11 @@ Rails.application.routes.draw do
   get     'sitemap',  to: 'sitemaps#index',   defaults: { format: 'xml'}
   resources :articles
   resources :users
+  resources :home, only: [:index, :new, :create] do
+    post :contact, on: :collection
+  end
 
   mount Ckeditor::Engine => '/ckeditor'
-
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
