@@ -15,12 +15,12 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-
 //= require ckeditor/init
 
-$(document).on('turbolinks:load', function(e){
+$(document).on("page:change ", function() {
+// $(document).on('turbolinks:load', function() {
 // $(document).ready(function(){
-
+console.log("js working")
 	// parallax function
   $window = $(window);
   $('section[data-type="background"]').each(function(){
