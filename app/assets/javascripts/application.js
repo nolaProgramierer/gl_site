@@ -11,15 +11,14 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery.turbolinks
+
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
 //= require ckeditor/init
 
-$(document).on("page:change ", function() {
-// $(document).on('turbolinks:load', function() {
-// $(document).ready(function(){
+
+$(document).on('turbolinks:load', function() {
 console.log("js working")
 	// parallax function
   $window = $(window);
