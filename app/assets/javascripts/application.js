@@ -18,8 +18,8 @@
 
 //= require ckeditor/init
 
-
-$(document).ready(function(){
+$(document).on('turbolinks:load', function(e){
+// $(document).ready(function(){
 
 	// parallax function
   $window = $(window);

@@ -331,9 +331,6 @@ a {
 .contact-form-text-area {
   color: black;
 }
-#flash-row {
-  min-height: 70px;
-}
 .social-icons a {
 	color: #CCC;
 	text-decoration: none;
@@ -357,4 +354,38 @@ a {
 	background-color: $black;
 	color: white;
 	padding-top: 50px;
+}
+#flash-row {
+  min-height: 70px;
+}
+.hidden { display: none; }
+.flash-text {
+	font-size: .8em;
+}
+.alert-error {
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: left;
+}
+
+.alert-alert {
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: left;
+}
+
+.alert-success {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: center;
+}
+
+.alert-notice {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: left;
 }
