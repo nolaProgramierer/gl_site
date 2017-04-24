@@ -18,7 +18,7 @@
 
 // $(document).ready(function() {
 $(document).on('turbolinks:load', function() {
-console.log("js working")
+console.log("document load js is working")
 	// parallax function
   $window = $(window);
   $('section[data-type="background"]').each(function(){
