@@ -16,7 +16,7 @@
 //= require_tree .
 //= require ckeditor/init
 
-
+// $(document).ready(function() {
 $(document).on('turbolinks:load', function() {
 console.log("js working")
 	// parallax function
