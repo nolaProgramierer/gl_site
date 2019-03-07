@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
-ruby '2.2.3'
+ruby '2.5.3'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.5'
+gem 'rails', '4.2.6'
 
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 # Use sqlite3 as the database for Active Record
