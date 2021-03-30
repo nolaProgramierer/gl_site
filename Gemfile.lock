@@ -107,9 +107,11 @@ GEM
     mime-types (3.2.2)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2018.0812)
-    mimemagic (0.3.2)
+    mimemagic (0.3.10)
+      nokogiri (~> 1)
+      rake
     mini_mime (1.0.1)
-    mini_portile2 (2.4.0)
+    mini_portile2 (2.5.0)
     minitest (5.11.3)
     minitest-reporters (1.1.14)
       ansi
@@ -118,8 +120,9 @@ GEM
       ruby-progressbar
     multi_json (1.12.1)
     netrc (0.11.0)
-    nokogiri (1.10.1)
-      mini_portile2 (~> 2.4.0)
+    nokogiri (1.11.0)
+      mini_portile2 (~> 2.5.0)
+      racc (~> 1.4)
     orm_adapter (0.5.0)
     paperclip (5.1.0)
       activemodel (>= 4.2.0)
@@ -129,6 +132,7 @@ GEM
       mimemagic (~> 0.3.0)
     pg (0.18.4)
     puma (3.8.2)
+    racc (1.5.2)
     rack (1.6.11)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -229,7 +233,7 @@ DEPENDENCIES
   jquery-rails
   mail_form (~> 1.6)
   minitest-reporters (~> 1.1, >= 1.1.9)
-  nokogiri (~> 1.6, >= 1.6.8)
+  nokogiri (~> 1.11)
   paperclip (~> 5.0)
   pg (~> 0.18.4)
   puma (~> 3.4)
