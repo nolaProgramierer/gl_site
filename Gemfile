@@ -73,5 +73,5 @@ group :production do
   gem 'puma', '~> 3.4'
 end
 
-gem 'nokogiri', '~> 1.6', '>= 1.6.8'
+gem 'nokogiri', '~> 1.12'
 gem 'mail_form', '~> 1.6'
